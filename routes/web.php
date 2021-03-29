@@ -25,8 +25,6 @@ Auth::routes();
 Route::group(['middleware' => ['auth']], function(){
     Route::get('/' , 'HomeController@index' );
     Route::get('/home' , 'HomeController@index' );
-    Route::get('/reservations/index' , 'ReservationController@index' )
-        ->name('reservations.index');
     Route::get('/reservations/create' , 'ReservationController@create' )
         ->name('reservations.create');
     Route::post('/reservations/store' , 'ReservationController@store' )
