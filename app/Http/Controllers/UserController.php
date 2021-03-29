@@ -44,6 +44,10 @@ class UserController extends Controller
             $phone_number = $request->input('phone_number');
             $users = $users->where('phone_number', 'like', "%$phone_number%");
         }
+        if($request->has('department_id') && $request->input('department_id') > 1) {
+            $department = $request->input('department_id');
+            $users = $users->where('department_id', $department);
+        }
         if($request->has('position_id') && $request->input('position_id') > 0) {
             $position = $request->input('position_id');
             $users = $users->where('position_id', $position);
@@ -90,6 +94,7 @@ class UserController extends Controller
             return view('user_edit',
                 [
                     'user' => $user,
+                    'departments' => Department::get(),
                     'positions' => Position::get(),
                 ]);
         } else {
@@ -149,6 +154,7 @@ class UserController extends Controller
                     'address' =>$request->address,
                     'email' => $request->email,
                     'phone_number' => $request->phone_number,
+                    'department_id' => $request->department_id,
                     'position_id' => $request->position_id,
                 ]);
         }
