@@ -62,7 +62,6 @@ class MeetingRoomController extends Controller
             // 管理者の場合
             $request->validate([
                 'name' => 'required|max:255',
-                'max_use_hour' => 'nullable|int',
                 'needs_approval' => 'required|boolean',
             ],
             [],
@@ -72,7 +71,6 @@ class MeetingRoomController extends Controller
 
             $meetingRoom = new MeetingRoom();
             $meetingRoom->name = $request->name;
-            $meetingRoom->max_use_hour = $request->max_use_hour;
             $meetingRoom->needs_approval = $request->needs_approval;
             $meetingRoom->save();
 
