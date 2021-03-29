@@ -29,6 +29,12 @@ class ReservationController extends Controller
     }
 
     public function create(){
+        return view('reservation_create',
+            [
+                'meetingRooms' => MeetingRoom::get(),
+                'items' => Item::get(),
+                'isAdmin' => Auth::user()->is_administrator,
+            ]);
     }
 
 
@@ -37,8 +43,71 @@ class ReservationController extends Controller
      * @param Request $request
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function store()
+    public function store(Request $request)
     {
+        $request->validate([
+            'meeting_room_id' => 'required',
+            'start_time' => 'required',
+            'end_time' => 'required|after:start_time',
+            'title' => 'max:255',
+        ]);
+
+        $meetingRoom = MeetingRoom::find($request->meeting_room_id);
+
+        // HTMLの input type="datetime-local" に T が含まれているので置換
+        $start_time = str_replace('T', ' ', $request->start_time);
+        $end_time = str_replace( 'T', ' ', $request->end_time);
+
+
+        $maxUseHour = $meetingRoom->max_use_hour;
+        if ($maxUseHour != null){
+            // 利用時間の上限がある場合
+            // 入力された会議時間を求める (strtotime は秒に変換するため、3600で割る)
+            $inputHour = (strtotime($end_time) - strtotime($start_time)) / 3600;
+            if ($inputHour > $maxUseHour) {
+                // 会議室の最大使用時間を超えている場合は予約画面に戻る
+                return back()
+                    ->withInput()
+                    ->with('error', '選択した会議室の最大利用時間は' . $meetingRoom->max_use_hour .'時間です');
+            }
+        }
+
+        // すでに予約されている時間と今回入力した時間が重なっている数を取得
+        $overlappingReservation = $meetingRoom->reservations->Where('end_time', '>',  $start_time)->Where('start_time', '<',  $end_time);
+
+        if ($overlappingReservation->Count() > 0) {
+            // 時間が重なっている予約がある場合は予約画面に戻る
+            $overlappedStartTime = date_create($overlappingReservation->first()->start_time)->format('Y年m月d日H時i分');
+            $overlappedEndTime = date_create($overlappingReservation->first()->end_time)->format('Y年m月d日H時i分');
+            return back()
+                ->withInput()
+                ->with('error', '選択した会議室はすでに' . $overlappedStartTime . 'から' . $overlappedEndTime.'まで予約されています');
+        }
+
+        $reservation = new Reservation();
+        $reservation->reservation_number = $reservation->getNextReservationNumber();
+        $reservation->user_id = Auth::id();
+        $reservation->meeting_room_id = $request->meeting_room_id;
+        $reservation->start_time = $start_time;
+        $reservation->end_time = $end_time;
+        $reservation->title = $request->title;
+        if ($meetingRoom->needs_approval == false){
+            // 承認の必要のない会議室は承認済にする (必要な場合は null (未承認))
+            $reservation->is_approved = true;
+        }
+        $reservation->save();
+
+        // 備品予約の処理
+        $items = $request->items;
+        if ($items != null) {
+            foreach ($items as $itemId) {
+                $itemReservation = new ItemReservation();
+                $itemReservation->item_id = $itemId;
+                $itemReservation->reservation_id = $reservation->id;
+                $itemReservation->save();
+            }
+        }
+        return redirect(route('reservations.index'));
     }
 
     public function edit(Request $request)
