@@ -21,34 +21,11 @@ class MeetingRoomController extends Controller
      * @param Request $request
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function index(Request $request)
+    public function index()
     {
-        if (Auth::user()->is_administrator) {
-            // 管理者の場合
-            $meetingRooms = MeetingRoom::get();
-            return view('meeting_room_index',
-                [
-                    'meetingRooms' => $meetingRooms
-                ]);
-
-        } else {
-            // 一般ユーザーの場合
-            return redirect('/');
-        }
     }
 
     public function create(){
-        if (Auth::user()->is_administrator) {
-            // 管理者の場合
-            return view('meeting_room_create',
-                [
-                    'meetingRooms' => MeetingRoom::get(),
-                    'items' => Item::get(),
-                ]);
-        } else {
-            // 一般ユーザーの場合
-            return redirect('/');
-        }
     }
 
     /**
@@ -88,19 +65,8 @@ class MeetingRoomController extends Controller
      * @param Request $request
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function edit(Request $request)
+    public function edit()
     {
-        if (Auth::user()->is_administrator) {
-            // 管理者の場合
-            $meetingRoom = MeetingRoom::find($request->id);
-            return view('meeting_room_edit',
-                [
-                    'room' => $meetingRoom,
-                ]);
-        } else {
-            // 一般ユーザーの場合
-            return redirect('/');
-        }
     }
 
     /**
@@ -108,28 +74,8 @@ class MeetingRoomController extends Controller
      * @param Request $request
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function update(Request $request)
+    public function update()
     {
-        if (Auth::user()->is_administrator) {
-            // 管理者の場合
-            $request->validate([
-                'name' => 'required|max:255',
-                'max_use_hour' => 'nullable|int',
-                'needs_approval' => 'required|boolean',
-            ],
-            [],
-            [
-                'name' => '会議室名',
-            ]);
-
-            MeetingRoom::where('id', $request->id)
-                ->update(['id' => $request->id,
-                    'name' => $request->name,
-                    'max_use_hour' => $request->max_use_hour,
-                    'needs_approval' => $request->needs_approval]);
-        }
-
-        return redirect(route('rooms.index'));
     }
 
     /**
@@ -137,17 +83,7 @@ class MeetingRoomController extends Controller
      * @param Request $request
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function delete(Request $request)
+    public function delete()
     {
-        if (Auth::user()->is_administrator) {
-            // 管理者の場合
-            $room = MeetingRoom::find($request->id);
-            $room->delete();
-
-            // 削除した会議室の予約も削除
-            $reservations = Reservation::where('meeting_room_id', $request->id);
-            $reservations->delete();
-        }
-        return redirect(route('rooms.index'));
     }
 }
