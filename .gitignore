@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+public/storage
+public/hot
+storage/*.key
+Homestead.yaml
+Homestead.json
+.env
+vendor
+node_modules
