@@ -58,6 +58,20 @@ class ReservationController extends Controller
         $start_time = str_replace('T', ' ', $request->start_time);
         $end_time = str_replace( 'T', ' ', $request->end_time);
 
+
+        $maxUseHour = $meetingRoom->max_use_hour;
+        if ($maxUseHour != null){
+            // 利用時間の上限がある場合
+            // 入力された会議時間を求める (strtotime は秒に変換するため、3600で割る)
+            $inputHour = (strtotime($end_time) - strtotime($start_time)) / 3600;
+            if ($inputHour > $maxUseHour) {
+                // 会議室の最大使用時間を超えている場合は予約画面に戻る
+                return back()
+                    ->withInput()
+                    ->with('error', '選択した会議室の最大利用時間は' . $meetingRoom->max_use_hour .'時間です');
+            }
+        }
+
         // すでに予約されている時間と今回入力した時間が重なっている数を取得
         $overlappingReservation = $meetingRoom->reservations->Where('end_time', '>',  $start_time)->Where('start_time', '<',  $end_time);
 
@@ -136,6 +150,19 @@ class ReservationController extends Controller
         // HTMLの input type="datetime-local" に T が含まれているので置換
         $start_time = str_replace('T', ' ', $request->start_time);
         $end_time = str_replace( 'T', ' ', $request->end_time);
+
+        $maxUseHour = $meetingRoom->max_use_hour;
+        if ($maxUseHour != null){
+            // 利用時間の上限がある場合
+            // 入力された会議時間を求める (strtotime は秒に変換するため、3600で割る)
+            $inputHour = (strtotime($end_time) - strtotime($start_time)) / 3600;
+            if ($inputHour > $maxUseHour) {
+                // 会議室の最大使用時間を超えている場合は予約画面に戻る
+                return back()
+                    ->withInput()
+                    ->with('error', '選択した会議室の最大利用時間は' . $meetingRoom->max_use_hour .'時間です');
+            }
+        }
 
         // すでに予約されている時間と今回入力した時間が重なっている数を取得 (この予約を除く)
         $overlappingReservation = $meetingRoom->reservations->where('id', '!=', $request->id)->Where('end_time', '>',  $start_time)->Where('start_time', '<',  $end_time);
