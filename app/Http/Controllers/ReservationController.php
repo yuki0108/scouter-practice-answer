@@ -20,12 +20,6 @@ class ReservationController extends Controller
      */
     public function index()
     {;
-        return view('reservation_index',
-            [
-                'reservations' => Reservation::get(),
-                'userId' => Auth::id(),
-                'isAdmin' => Auth::user()->is_administrator,
-            ]);
     }
 
     public function create(){
