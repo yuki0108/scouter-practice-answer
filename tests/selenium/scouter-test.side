@@ -1,27 +1,27 @@
 {
-  "id": "e89c78bf-3d87-4fbb-b199-2ad07ec694b9",
+  "id": "5a4c4dbb-4fb5-4c1a-bbbd-c209b6a0fc97",
   "version": "2.0",
-  "name": "php-practice-16",
+  "name": "php-practice-17",
   "url": "http://localhost",
   "tests": [{
-    "id": "8e195a24-a21e-42e1-a5a8-df594df42644",
-    "name": "php-practice-16",
+    "id": "7ed4c387-8d54-4943-b933-6fcb460bcf60",
+    "name": "php-practice-17",
     "commands": [{
-      "id": "a2b5c0f4-55a3-4920-bef5-1bc7b56ec03a",
+      "id": "87a1c82b-1136-4c78-9bcb-91d550c96a5b",
       "comment": "",
       "command": "open",
       "target": "/",
       "targets": [],
       "value": ""
     }, {
-      "id": "2f7469f7-4d55-4061-b636-f9addb796b30",
+      "id": "75a533d8-f01d-44dd-9a37-cbf5cd1dd535",
       "comment": "",
       "command": "setWindowSize",
       "target": "1440x900",
       "targets": [],
       "value": ""
     }, {
-      "id": "5a9a809c-c1c9-4223-b84d-c36c470f8cd7",
+      "id": "d23e13fd-70bd-49d2-9549-897ffc2bc2d5",
       "comment": "",
       "command": "type",
       "target": "id=user_name_id",
@@ -33,9 +33,9 @@
         ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div/div/input", "xpath:idRelative"],
         ["xpath=//div/input", "xpath:position"]
       ],
-      "value": "user2"
+      "value": "user1"
     }, {
-      "id": "9d6d1c59-cae0-4b6e-8e8a-85bb5eb21ab2",
+      "id": "55a8bd24-2f18-4db7-b615-9c867bb75cff",
       "comment": "",
       "command": "type",
       "target": "id=password",
@@ -49,7 +49,7 @@
       ],
       "value": "1234abc@"
     }, {
-      "id": "89faae21-f77a-43cc-99ec-55fe6219c2f2",
+      "id": "f2557d48-f95b-419c-9dac-c3954ae07030",
       "comment": "",
       "command": "click",
       "target": "css=.btn-primary",
@@ -62,481 +62,354 @@
       ],
       "value": ""
     }, {
-      "id": "4eda53f6-9a5e-4fce-8238-4ba72b3b3b59",
+      "id": "3fa820e6-1702-45b8-ba82-ce3ccb181bd8",
       "comment": "",
       "command": "click",
-      "target": "linkText=予約一覧",
+      "target": "linkText=ユーザー一覧",
       "targets": [
-        ["linkText=予約一覧", "linkText"],
-        ["css=.btn:nth-child(2)", "css:finder"],
-        ["xpath=//a[contains(text(),'予約一覧')]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/reservations/index']", "xpath:href"],
-        ["xpath=//div[2]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'予約一覧')]", "xpath:innerText"]
+        ["linkText=ユーザー一覧", "linkText"],
+        ["css=.btn:nth-child(8)", "css:finder"],
+        ["xpath=//a[contains(text(),'ユーザー一覧')]", "xpath:link"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/a[4]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/users/index']", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'ユーザー一覧')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "7b6fd3d7-6424-4241-8316-a0600481eace",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(7) > td:nth-child(1)",
-      "targets": [
-        ["css=tr:nth-child(7) > td:nth-child(1)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[7]/td", "xpath:idRelative"],
-        ["xpath=//tr[7]/td", "xpath:position"],
-        ["xpath=//td[contains(.,'000006')]", "xpath:innerText"]
-      ],
-      "value": "000006"
-    }, {
-      "id": "4d265d14-d510-4a4d-aacb-adcb592069a9",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(7) > td:nth-child(2)",
-      "targets": [
-        ["css=tr:nth-child(7) > td:nth-child(2)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[7]/td[2]", "xpath:idRelative"],
-        ["xpath=//tr[7]/td[2]", "xpath:position"]
-      ],
-      "value": "会議室A"
-    }, {
-      "id": "f2924ad5-46eb-44de-be14-5eb9b38a339d",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(7) > td:nth-child(3)",
-      "targets": [
-        ["css=tr:nth-child(7) > td:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[7]/td[3]", "xpath:idRelative"],
-        ["xpath=//tr[7]/td[3]", "xpath:position"],
-        ["xpath=//td[contains(.,'非公開')]", "xpath:innerText"]
-      ],
-      "value": "非公開"
-    }, {
-      "id": "88fdca34-c3bd-47bf-9c60-b1e27e5ad2c9",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(7) > td:nth-child(4)",
-      "targets": [
-        ["css=tr:nth-child(7) > td:nth-child(4)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[7]/td[4]", "xpath:idRelative"],
-        ["xpath=//tr[7]/td[4]", "xpath:position"]
-      ],
-      "value": "非公開"
-    }, {
-      "id": "85f15bd2-c14d-4790-a7fe-4f3c29ea01cd",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(7) > td:nth-child(5)",
-      "targets": [
-        ["css=tr:nth-child(7) > td:nth-child(5)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[7]/td[5]", "xpath:idRelative"],
-        ["xpath=//tr[7]/td[5]", "xpath:position"]
-      ],
-      "value": "非公開"
-    }, {
-      "id": "21cfe0a8-b69e-489e-b280-b496c510c014",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(7) > td:nth-child(6)",
-      "targets": [
-        ["css=tr:nth-child(7) > td:nth-child(6)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[7]/td[6]", "xpath:idRelative"],
-        ["xpath=//tr[7]/td[6]", "xpath:position"]
-      ],
-      "value": "非公開"
-    }, {
-      "id": "67bf3a33-97e4-441a-9c8b-dbfcf633f4fe",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(7) > td:nth-child(7)",
-      "targets": [
-        ["css=tr:nth-child(7) > td:nth-child(7)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[7]/td[7]", "xpath:idRelative"],
-        ["xpath=//tr[7]/td[7]", "xpath:position"],
-        ["xpath=//td[contains(.,'2021年04月05日18時00分')]", "xpath:innerText"]
-      ],
-      "value": "2021年04月05日18時00分"
-    }, {
-      "id": "2984afeb-4657-48b0-b41a-fae6bd3d27c2",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(7) > td:nth-child(8)",
-      "targets": [
-        ["css=tr:nth-child(7) > td:nth-child(8)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[7]/td[8]", "xpath:idRelative"],
-        ["xpath=//tr[7]/td[8]", "xpath:position"],
-        ["xpath=//td[contains(.,'2021年04月05日19時00分')]", "xpath:innerText"]
-      ],
-      "value": "2021年04月05日19時00分"
-    }, {
-      "id": "29f888fe-8828-4c6d-a2c2-d4839c34d962",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(7) > td:nth-child(9)",
-      "targets": [
-        ["css=tr:nth-child(7) > td:nth-child(9)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[7]/td[9]", "xpath:idRelative"],
-        ["xpath=//tr[7]/td[9]", "xpath:position"]
-      ],
-      "value": "未完了"
-    }, {
-      "id": "cfd24578-5e5b-48ee-9d5e-471f955de6c5",
-      "comment": "",
-      "command": "verifyText",
-      "target": "linkText=編集",
-      "targets": [
-        ["linkText=編集", "linkText"],
-        ["css=tr:nth-child(2) .btn-primary", "css:finder"],
-        ["xpath=//a[contains(text(),'編集')]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td[10]/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/reservations/edit/1']", "xpath:href"],
-        ["xpath=//td[10]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'編集')]", "xpath:innerText"]
-      ],
-      "value": "編集"
-    }, {
-      "id": "269fa60a-d0b0-46f1-930f-4a7f1b7a2b52",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(3) .btn-primary",
-      "targets": [
-        ["css=tr:nth-child(3) .btn-primary", "css:finder"],
-        ["xpath=(//a[contains(text(),'編集')])[2]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[3]/td[10]/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/reservations/edit/3']", "xpath:href"],
-        ["xpath=//tr[3]/td[10]/a", "xpath:position"]
-      ],
-      "value": "編集"
-    }, {
-      "id": "91cf65bd-562e-438d-8738-952be9627eb0",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(4) .btn-primary",
-      "targets": [
-        ["css=tr:nth-child(4) .btn-primary", "css:finder"],
-        ["xpath=(//a[contains(text(),'編集')])[3]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[4]/td[10]/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/reservations/edit/4']", "xpath:href"],
-        ["xpath=//tr[4]/td[10]/a", "xpath:position"]
-      ],
-      "value": "編集"
-    }, {
-      "id": "a9b470b8-5528-4773-a49f-9b8f80dde1bb",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(5) .btn-primary",
-      "targets": [
-        ["css=tr:nth-child(5) .btn-primary", "css:finder"],
-        ["xpath=(//a[contains(text(),'編集')])[4]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[5]/td[10]/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/reservations/edit/5']", "xpath:href"],
-        ["xpath=//tr[5]/td[10]/a", "xpath:position"]
-      ],
-      "value": "編集"
-    }, {
-      "id": "91b404fd-f5e6-4afe-a680-8bb4a1d78546",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(6) .btn-primary",
-      "targets": [
-        ["linkText=編集", "linkText"],
-        ["css=tr:nth-child(2) .btn-primary", "css:finder"],
-        ["xpath=//a[contains(text(),'編集')]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td[10]/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/reservations/edit/1']", "xpath:href"],
-        ["xpath=//td[10]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'編集')]", "xpath:innerText"]
-      ],
-      "value": "編集"
-    }, {
-      "id": "ff3d1b60-06bc-42f9-ac8e-0cee93687e05",
-      "comment": "",
-      "command": "verifyNotText",
-      "target": "css=tr:nth-child(7) > td:nth-child(10)",
-      "targets": [
-        ["css=tr:nth-child(7) > td:nth-child(10)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[7]/td[10]", "xpath:idRelative"],
-        ["xpath=//tr[7]/td[10]", "xpath:position"],
-        ["xpath=//td[contains(.,'-')]", "xpath:innerText"]
-      ],
-      "value": "編集"
-    }, {
-      "id": "4e35f8b2-e1f7-4a08-9185-848488337245",
-      "comment": "",
-      "command": "verifyText",
-      "target": "linkText=削除",
-      "targets": [
-        ["linkText=削除", "linkText"],
-        ["css=tr:nth-child(2) .btn-danger", "css:finder"],
-        ["xpath=//a[contains(text(),'削除')]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td[11]/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/reservations/delete/2']", "xpath:href"],
-        ["xpath=//td[11]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'削除')]", "xpath:innerText"]
-      ],
-      "value": "削除"
-    }, {
-      "id": "9f479aee-892d-4ebd-ac75-641800c3108d",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(3) .btn-danger",
-      "targets": [
-        ["css=tr:nth-child(3) .btn-danger", "css:finder"],
-        ["xpath=(//a[contains(text(),'削除')])[2]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[3]/td[11]/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/reservations/delete/3']", "xpath:href"],
-        ["xpath=//tr[3]/td[11]/a", "xpath:position"]
-      ],
-      "value": "削除"
-    }, {
-      "id": "627d9508-2f70-49ee-877a-76e6a00ed1dc",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(4) .btn-danger",
-      "targets": [
-        ["css=tr:nth-child(4) .btn-danger", "css:finder"],
-        ["xpath=(//a[contains(text(),'削除')])[3]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[4]/td[11]/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/reservations/delete/4']", "xpath:href"],
-        ["xpath=//tr[4]/td[11]/a", "xpath:position"]
-      ],
-      "value": "削除"
-    }, {
-      "id": "3c617a21-cd89-46fc-8824-f9d020c62002",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(5) .btn-danger",
-      "targets": [
-        ["css=tr:nth-child(5) .btn-danger", "css:finder"],
-        ["xpath=(//a[contains(text(),'削除')])[4]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[5]/td[11]/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/reservations/delete/5']", "xpath:href"],
-        ["xpath=//tr[5]/td[11]/a", "xpath:position"]
-      ],
-      "value": "削除"
-    }, {
-      "id": "9c9c27ee-d027-4d89-b4c8-c9118566d611",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(6) .btn-danger",
-      "targets": [
-        ["linkText=削除", "linkText"],
-        ["css=tr:nth-child(2) .btn-danger", "css:finder"],
-        ["xpath=//a[contains(text(),'削除')]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td[11]/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/reservations/delete/2']", "xpath:href"],
-        ["xpath=//td[11]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'削除')]", "xpath:innerText"]
-      ],
-      "value": "削除"
-    }, {
-      "id": "9aca9247-2ca2-493c-93a2-abdc886b73c8",
-      "comment": "",
-      "command": "verifyNotText",
-      "target": "css=tr:nth-child(7) > td:nth-child(11)",
-      "targets": [
-        ["css=tr:nth-child(7) > td:nth-child(11)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[7]/td[11]", "xpath:idRelative"],
-        ["xpath=//tr[7]/td[11]", "xpath:position"]
-      ],
-      "value": "削除"
-    }, {
-      "id": "d45b4625-c0f5-4351-8d95-b662fd6a9e13",
+      "id": "3749c0b5-7f05-41de-82dd-c2d39b94941a",
       "comment": "",
       "command": "click",
       "target": "linkText=編集",
       "targets": [
         ["linkText=編集", "linkText"],
-        ["css=tr:nth-child(2) .btn-primary", "css:finder"],
+        ["css=tr:nth-child(2) .btn", "css:finder"],
         ["xpath=//a[contains(text(),'編集')]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td[10]/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/reservations/edit/1']", "xpath:href"],
-        ["xpath=//td[10]/a", "xpath:position"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td[7]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/users/edit/1']", "xpath:href"],
+        ["xpath=//td[7]/a", "xpath:position"],
         ["xpath=//a[contains(.,'編集')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "67691182-8b63-4f09-927b-02f0ec187a80",
+      "id": "5aeb1bdf-ce12-427f-8881-5ba2dbb59a4b",
       "comment": "",
-      "command": "select",
-      "target": "id=meeting_room_id",
+      "command": "verifyElementPresent",
+      "target": "id=name",
       "targets": [],
-      "value": "label=会議室B (上限3時間)"
+      "value": ""
     }, {
-      "id": "fc86a352-139f-4bdb-8c10-8698a84c3b72",
+      "id": "be352438-07cc-48bc-abc5-b9143bbde826",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=email",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e781f07-bb25-46f1-a41a-8849d5b5f81d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=phone_number",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1cb20ae7-98ea-49d7-acc1-d35a999ffe67",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=department_id",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e267cfe0-e575-4e0d-8957-635cad6282e0",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=position_id",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "acda9e56-5aca-4579-a640-26b5c1a9ffc5",
       "comment": "",
       "command": "type",
-      "target": "id=start_time",
+      "target": "id=name",
       "targets": [
-        ["id=start_time", "id"],
-        ["name=start_time", "name"],
-        ["css=#start_time", "css:finder"],
-        ["xpath=//input[@id='start_time']", "xpath:attributes"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[2]/div/input", "xpath:idRelative"],
-        ["xpath=//div/input", "xpath:position"]
-      ],
-      "value": "2021-03-25T12:00"
-    }, {
-      "id": "26833710-66fc-4c34-8c05-cc4bd327479a",
-      "comment": "",
-      "command": "type",
-      "target": "id=end_time",
-      "targets": [
-        ["id=end_time", "id"],
-        ["name=end_time", "name"],
-        ["css=#end_time", "css:finder"],
-        ["xpath=//input[@id='end_time']", "xpath:attributes"],
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
         ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[3]/div/input", "xpath:idRelative"],
         ["xpath=//div[3]/div/input", "xpath:position"]
       ],
-      "value": "2021-03-25T14:00"
-    }, {
-      "id": "719f48b3-3021-4f35-986e-d0eeb95a26ae",
-      "comment": "",
-      "command": "type",
-      "target": "id=title",
-      "targets": [
-        ["id=title", "id"],
-        ["name=title", "name"],
-        ["css=#title", "css:finder"],
-        ["xpath=//input[@id='title']", "xpath:attributes"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[4]/div/input", "xpath:idRelative"],
-        ["xpath=//div[4]/div/input", "xpath:position"]
-      ],
-      "value": "テストK2"
-    }, {
-      "id": "09419820-2c3b-403a-8fc8-fae414038e20",
-      "comment": "",
-      "command": "click",
-      "target": "id=item2",
-      "targets": [
-        ["id=item2", "id"],
-        ["css=#item2", "css:finder"],
-        ["xpath=//input[@id='item2']", "xpath:attributes"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[5]/div/label[2]/input", "xpath:idRelative"],
-        ["xpath=//label[2]/input", "xpath:position"]
-      ],
       "value": ""
     }, {
-      "id": "7f39e826-466c-4c49-9be6-ef4cd1c83afd",
+      "id": "cceca108-417c-47ec-90ca-54563fdf595f",
       "comment": "",
       "command": "click",
       "target": "css=.btn\\.btn-info",
       "targets": [
         ["css=.btn\\.btn-info", "css:finder"],
         ["xpath=//button[@type='submit']", "xpath:attributes"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[6]/div/button", "xpath:idRelative"],
-        ["xpath=//div[6]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'予約を修正')]", "xpath:innerText"]
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[10]/div/button", "xpath:idRelative"],
+        ["xpath=//div[10]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'ユーザーを更新')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "2a448dc4-e147-42c3-99b3-5268ffae6aea",
+      "id": "f2b56754-ce96-4078-998f-21b3ef2b6cd2",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "花子テスト"
+    }, {
+      "id": "0d539b06-97c1-493a-91f2-b53a2fb8d7b4",
+      "comment": "",
+      "command": "type",
+      "target": "id=zipcode",
+      "targets": [
+        ["id=zipcode", "id"],
+        ["name=zipcode", "name"],
+        ["css=#zipcode", "css:finder"],
+        ["xpath=//input[@id='zipcode']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "1040061"
+    }, {
+      "id": "90c33341-9780-467f-a3bf-421e936b3594",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn\\.btn-info",
+      "targets": [
+        ["css=.btn\\.btn-info", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[10]/div/button", "xpath:idRelative"],
+        ["xpath=//div[10]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'ユーザーを更新')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b905fe51-209f-42be-bbb5-d4cc16ba4213",
       "comment": "",
       "command": "verifyText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[4]/div/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'正しい形式の郵便番号を指定してください。')]", "xpath:innerText"]
+      ],
+      "value": "正しい形式の郵便番号を指定してください。"
+    }, {
+      "id": "f17949dc-2d12-4a7b-a933-60e35b3b3c4c",
+      "comment": "",
+      "command": "type",
+      "target": "id=zipcode",
+      "targets": [
+        ["id=zipcode", "id"],
+        ["name=zipcode", "name"],
+        ["css=#zipcode", "css:finder"],
+        ["xpath=//input[@id='zipcode']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "104-0061"
+    }, {
+      "id": "ba5e2de3-6b6e-4b45-b3fc-dc337d2964d2",
+      "comment": "",
+      "command": "type",
+      "target": "id=address",
+      "targets": [
+        ["id=address", "id"],
+        ["name=address", "name"],
+        ["css=#address", "css:finder"],
+        ["xpath=//input[@id='address']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e9080fd-2ee7-4807-a307-e1de2a2f4206",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn\\.btn-info",
+      "targets": [
+        ["css=.btn\\.btn-info", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[10]/div/button", "xpath:idRelative"],
+        ["xpath=//div[10]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'ユーザーを更新')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33f8db8e-e113-412d-a378-aa5a7fe6498a",
+      "comment": "",
+      "command": "type",
+      "target": "id=address",
+      "targets": [
+        ["id=address", "id"],
+        ["name=address", "name"],
+        ["css=#address", "css:finder"],
+        ["xpath=//input[@id='address']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "東京都中央区銀座"
+    }, {
+      "id": "cc0ec3f5-74f4-40a3-868f-13c1983f0d09",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "hanako@test.com"
+    }, {
+      "id": "f777f15c-09db-48e6-aaeb-5517e74d757c",
+      "comment": "",
+      "command": "type",
+      "target": "id=phone_number",
+      "targets": [
+        ["id=phone_number", "id"],
+        ["name=phone_number", "name"],
+        ["css=#phone_number", "css:finder"],
+        ["xpath=//input[@id='phone_number']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[7]/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/input", "xpath:position"]
+      ],
+      "value": "06022223333"
+    }, {
+      "id": "95eebe09-0a8f-4075-9e40-25bad9894cde",
+      "comment": "",
+      "command": "select",
+      "target": "id=department_id",
+      "targets": [],
+      "value": "label=広報部"
+    }, {
+      "id": "6b05af3f-4781-4a37-b6a1-0b77cf7c27e4",
+      "comment": "",
+      "command": "select",
+      "target": "id=position_id",
+      "targets": [],
+      "value": "label=専務"
+    }, {
+      "id": "a950e0f3-a8b8-43a4-b531-30a553511140",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn\\.btn-info",
+      "targets": [
+        ["css=.btn\\.btn-info", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[10]/div/button", "xpath:idRelative"],
+        ["xpath=//div[10]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'ユーザーを更新')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55c03238-3f52-4708-972c-43869f0f64fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) > td:nth-child(1) > a",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'user1')])[2]", "xpath:link"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/users/show/1']", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "291d1448-62ff-4a0a-a860-dd92779318c6",
+      "comment": "",
+      "command": "assertText",
       "target": "css=tr:nth-child(2) > td:nth-child(2)",
       "targets": [
         ["css=tr:nth-child(2) > td:nth-child(2)", "css:finder"],
         ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td[2]", "xpath:idRelative"],
-        ["xpath=//td[2]", "xpath:position"],
-        ["xpath=//td[contains(.,'会議室B (上限3時間)')]", "xpath:innerText"]
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'花子テスト')]", "xpath:innerText"]
       ],
-      "value": "会議室B (上限3時間)"
+      "value": "花子テスト"
     }, {
-      "id": "5ed212ea-f1cc-4a83-af5a-f957d16d5498",
+      "id": "e3d36528-82e2-4e0b-bf35-b3b8dc193aca",
       "comment": "",
       "command": "verifyText",
-      "target": "css=tr:nth-child(2) > td:nth-child(3)",
+      "target": "css=tr:nth-child(3) > td:nth-child(2)",
       "targets": [
-        ["css=tr:nth-child(2) > td:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td[3]", "xpath:idRelative"],
-        ["xpath=//td[3]", "xpath:position"],
-        ["xpath=//td[contains(.,'テストK2')]", "xpath:innerText"]
+        ["css=tr:nth-child(3) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[3]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'104-0061')]", "xpath:innerText"]
       ],
-      "value": "テストK2"
+      "value": "104-0061"
     }, {
-      "id": "c0daad45-fa9e-464e-9ca8-f1f774c27719",
+      "id": "06b8f751-19a9-4e09-b3be-d5a15044c010",
       "comment": "",
       "command": "verifyText",
-      "target": "css=tr:nth-child(2) > td:nth-child(4)",
+      "target": "css=tr:nth-child(4) > td:nth-child(2)",
       "targets": [
-        ["css=tr:nth-child(2) > td:nth-child(4)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td[4]", "xpath:idRelative"],
-        ["xpath=//td[4]", "xpath:position"],
-        ["xpath=//td[contains(.,'テスト太郎2')]", "xpath:innerText"]
+        ["css=tr:nth-child(4) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[4]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'東京都中央区銀座')]", "xpath:innerText"]
       ],
-      "value": "テスト太郎2"
+      "value": "東京都中央区銀座"
     }, {
-      "id": "aefa3c13-a458-438d-ad3d-3e1d8be1f02f",
+      "id": "3ba67d77-3b08-48cd-88da-8c5e821148d6",
       "comment": "",
       "command": "verifyText",
-      "target": "css=tr:nth-child(2) > td:nth-child(5)",
+      "target": "css=tr:nth-child(6) > td:nth-child(2)",
       "targets": [
-        ["css=tr:nth-child(2) > td:nth-child(5)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td[5]", "xpath:idRelative"],
-        ["xpath=//td[5]", "xpath:position"]
+        ["css=tr:nth-child(6) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[6]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'06022223333')]", "xpath:innerText"]
       ],
-      "value": "プロジェクター\\nマイク"
+      "value": "06022223333"
     }, {
-      "id": "69a08925-6223-4d1c-80b7-cdbe1c473ac6",
+      "id": "ba406a8a-3266-43b9-8dbe-212708116402",
       "comment": "",
       "command": "verifyText",
-      "target": "css=tr:nth-child(2) > td:nth-child(7)",
+      "target": "css=tr:nth-child(7) > td:nth-child(2)",
       "targets": [
-        ["css=tr:nth-child(2) > td:nth-child(7)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td[7]", "xpath:idRelative"],
-        ["xpath=//td[7]", "xpath:position"],
-        ["xpath=//td[contains(.,'2021年03月25日12時00分')]", "xpath:innerText"]
+        ["css=tr:nth-child(7) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[7]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'広報部')]", "xpath:innerText"]
       ],
-      "value": "2021年03月25日12時00分"
+      "value": "広報部"
     }, {
-      "id": "fbcc8bd3-0e0c-459f-a53a-5a9da6ab7458",
+      "id": "d66892d6-e0fd-4580-a600-07ecf5927e25",
       "comment": "",
       "command": "verifyText",
-      "target": "css=tr:nth-child(2) > td:nth-child(8)",
+      "target": "css=tr:nth-child(8) > td:nth-child(2)",
       "targets": [
-        ["css=tr:nth-child(2) > td:nth-child(8)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td[8]", "xpath:idRelative"],
-        ["xpath=//td[8]", "xpath:position"],
-        ["xpath=//td[contains(.,'2021年03月25日14時00分')]", "xpath:innerText"]
+        ["css=tr:nth-child(8) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[8]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[8]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'専務')]", "xpath:innerText"]
       ],
-      "value": "2021年03月25日14時00分"
-    }, {
-      "id": "6c10e809-fdab-4733-99c8-3bd8de032049",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=削除",
-      "targets": [
-        ["linkText=削除", "linkText"],
-        ["css=tr:nth-child(2) .btn-danger", "css:finder"],
-        ["xpath=//a[contains(text(),'削除')]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td[11]/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/reservations/delete/1']", "xpath:href"],
-        ["xpath=//td[11]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'削除')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "9466125c-48a8-4b47-a86a-2edfebc05920",
-      "comment": "",
-      "command": "verifyNotText",
-      "target": "css=tr:nth-child(2) > td:nth-child(1)",
-      "targets": [
-        ["css=tr:nth-child(2) > td:nth-child(1)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td", "xpath:idRelative"],
-        ["xpath=//td", "xpath:position"],
-        ["xpath=//td[contains(.,'000002')]", "xpath:innerText"]
-      ],
-      "value": "000001"
+      "value": "専務"
     }]
   }],
   "suites": [{
-    "id": "3a04651a-2036-4d12-8204-4113e4563ed3",
+    "id": "9c48fd1b-8703-4179-baaa-897e13f299a8",
     "name": "Default Suite",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["8e195a24-a21e-42e1-a5a8-df594df42644"]
+    "tests": ["7ed4c387-8d54-4943-b933-6fcb460bcf60"]
   }],
   "urls": ["http://localhost/"],
   "plugins": []
