@@ -33,6 +33,7 @@ class MeetingRoomController extends Controller
 
         } else {
             // 一般ユーザーの場合
+            return redirect('/');
         }
     }
 
@@ -46,6 +47,7 @@ class MeetingRoomController extends Controller
                 ]);
         } else {
             // 一般ユーザーの場合
+            return redirect('/');
         }
     }
 
@@ -97,6 +99,7 @@ class MeetingRoomController extends Controller
                 ]);
         } else {
             // 一般ユーザーの場合
+            return redirect('/');
         }
     }
 
