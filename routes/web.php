@@ -25,18 +25,10 @@ Auth::routes();
 Route::group(['middleware' => ['auth']], function(){
     Route::get('/' , 'HomeController@index' );
     Route::get('/home' , 'HomeController@index' );
-    Route::get('/reservations/index' , 'ReservationController@index' )
-        ->name('reservations.index');
     Route::get('/reservations/create' , 'ReservationController@create' )
         ->name('reservations.create');
     Route::post('/reservations/store' , 'ReservationController@store' )
         ->name('reservations.store');
-    Route::get('/reservations/edit/{id}', 'ReservationController@edit')
-        ->name('reservations.edit');
-    Route::put('/reservations/update', 'ReservationController@update')
-        ->name('reservations.update');
-    Route::get('/reservations/delete/{id}', 'ReservationController@delete')
-        ->name('reservations.delete');
     Route::get('/reservations/approve/{id}', 'ReservationController@approve')
         ->name('reservations.approve');
     Route::get('/reservations/reject/{id}', 'ReservationController@reject')
