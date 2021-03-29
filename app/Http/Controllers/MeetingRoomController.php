@@ -38,6 +38,17 @@ class MeetingRoomController extends Controller
     }
 
     public function create(){
+        if (Auth::user()->is_administrator) {
+            // 管理者の場合
+            return view('meeting_room_create',
+                [
+                    'meetingRooms' => MeetingRoom::get(),
+                    'items' => Item::get(),
+                ]);
+        } else {
+            // 一般ユーザーの場合
+            return redirect('/');
+        }
     }
 
     /**
@@ -45,8 +56,31 @@ class MeetingRoomController extends Controller
      * @param Request $request
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function store()
+    public function store(Request $request)
     {
+        if (Auth::user()->is_administrator) {
+            // 管理者の場合
+            $request->validate([
+                'name' => 'required|max:255',
+                'max_use_hour' => 'nullable|int',
+                'needs_approval' => 'required|boolean',
+            ],
+            [],
+            [
+                'name' => '会議室名',
+            ]);
+
+            $meetingRoom = new MeetingRoom();
+            $meetingRoom->name = $request->name;
+            $meetingRoom->max_use_hour = $request->max_use_hour;
+            $meetingRoom->needs_approval = $request->needs_approval;
+            $meetingRoom->save();
+
+            return redirect(route('rooms.index'));
+        } else {
+            // 一般ユーザーの場合
+            return redirect('/');
+        }
     }
 
     /**
@@ -103,7 +137,17 @@ class MeetingRoomController extends Controller
      * @param Request $request
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function delete()
+    public function delete(Request $request)
     {
+        if (Auth::user()->is_administrator) {
+            // 管理者の場合
+            $room = MeetingRoom::find($request->id);
+            $room->delete();
+
+            // 削除した会議室の予約も削除
+            $reservations = Reservation::where('meeting_room_id', $request->id);
+            $reservations->delete();
+        }
+        return redirect(route('rooms.index'));
     }
 }
