@@ -1,27 +1,175 @@
 {
-  "id": "edc26189-7361-48be-8466-1cef5e2d13ae",
+  "id": "7bc6e5b5-9bbe-4f3d-a913-67e7064fd15e",
   "version": "2.0",
-  "name": "php-advanced-15",
+  "name": "php-practice-14",
   "url": "http://localhost",
   "tests": [{
-    "id": "55a365e4-5aa0-4ade-ac08-bc6cdf6e583b",
-    "name": "php-advanced-15",
+    "id": "81f1a3a8-34da-48b1-9abb-8ba8c29374d8",
+    "name": "php-practice-14",
     "commands": [{
-      "id": "a992cc14-1dd0-4053-8a74-b15c219a09b4",
+      "id": "4fa6ce3f-73e3-4cf0-8d0d-e191058a5a7f",
       "comment": "",
       "command": "open",
-      "target": "/login",
+      "target": "/",
       "targets": [],
       "value": ""
     }, {
-      "id": "be090dc4-ee84-418a-a9ac-f114fb161b1a",
+      "id": "70347f8a-94ca-46c5-ad58-ab7cbb1ae7d6",
       "comment": "",
       "command": "setWindowSize",
       "target": "1440x900",
       "targets": [],
       "value": ""
     }, {
-      "id": "1cd1425b-6208-46d9-9e62-ffc1a19ae67c",
+      "id": "d7e46a36-2f01-4738-9a74-08b5f4cbfd48",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=アカウント作成",
+      "targets": [
+        ["linkText=アカウント作成", "linkText"],
+        ["css=.nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'アカウント作成')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul[2]/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/register']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'アカウント作成')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ac6147d-4a91-42f8-abe1-06531515bc68",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_name_id",
+      "targets": [
+        ["id=user_name_id", "id"],
+        ["name=user_name_id", "name"],
+        ["css=#user_name_id", "css:finder"],
+        ["xpath=//input[@id='user_name_id']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c1a5d5c-edc8-4c88-a20e-3d9b61117450",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=name",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76cec7d3-26b8-494b-baea-a7fe3ac6844e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=zipcode",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d777fd50-a2b0-4b27-90b3-05b1242ac360",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=address",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "991699b9-bab7-49aa-b38a-6e7510ecf86d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=email",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c72c16c1-7a5d-4595-856d-0f8942a60de9",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=phone_number",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "720709a6-a177-47f3-81a8-506ce165d19c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=department_id",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9495f908-786d-481b-8e0c-997cef1d2282",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=position_id",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2890dbe2-5b98-4a02-8a53-0eed341b6cba",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ef6bb9d-3b94-4340-9336-b601119718cc",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=password-confirm",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5512368b-9e11-47e9-8208-a792b3eb26c1",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_name_id",
+      "targets": [
+        ["id=user_name_id", "id"],
+        ["name=user_name_id", "name"],
+        ["css=#user_name_id", "css:finder"],
+        ["xpath=//input[@id='user_name_id']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "user6"
+    }, {
+      "id": "d0b7f471-4051-4f86-83f6-49159b0cf788",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "田中太郎"
+    }, {
+      "id": "5b1eb26a-53c8-4939-88b6-d839dc8cde5f",
+      "comment": "",
+      "command": "type",
+      "target": "id=zipcode",
+      "targets": [
+        ["id=zipcode", "id"],
+        ["name=zipcode", "name"],
+        ["css=#zipcode", "css:finder"],
+        ["xpath=//input[@id='zipcode']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "1040061"
+    }, {
+      "id": "8b228320-446b-4842-9263-f5db8494dfe5",
+      "comment": "",
+      "command": "type",
+      "target": "id=address",
+      "targets": [
+        ["id=address", "id"],
+        ["name=address", "name"],
+        ["css=#address", "css:finder"],
+        ["xpath=//input[@id='address']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "東京都中央区銀座"
+    }, {
+      "id": "c6b318c7-c70e-415a-bfa8-cc2caf021e76",
       "comment": "",
       "command": "type",
       "target": "id=email",
@@ -30,12 +178,590 @@
         ["name=email", "name"],
         ["css=#email", "css:finder"],
         ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "tanaka"
+    }, {
+      "id": "8df1fdb7-2096-4745-ab0d-422996325fce",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[10]/div/input", "xpath:idRelative"],
+        ["xpath=//div[10]/div/input", "xpath:position"]
+      ],
+      "value": "1234abc@"
+    }, {
+      "id": "5c2e37e4-7f5f-4188-9fd1-3f4e801621c9",
+      "comment": "",
+      "command": "type",
+      "target": "id=password-confirm",
+      "targets": [
+        ["id=password-confirm", "id"],
+        ["name=password_confirmation", "name"],
+        ["css=#password-confirm", "css:finder"],
+        ["xpath=//input[@id='password-confirm']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[11]/div/input", "xpath:idRelative"],
+        ["xpath=//div[11]/div/input", "xpath:position"]
+      ],
+      "value": "1234abc@"
+    }, {
+      "id": "c1f8e35a-5abd-473b-a990-86477b10406d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[12]/div/button", "xpath:idRelative"],
+        ["xpath=//div[12]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'アカウント作成')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec50c62f-8fed-4b68-acf1-2dedfae38eed",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "tanaka@"
+    }, {
+      "id": "5e952b1d-2612-4e45-8d1a-6ee1d635bb43",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[12]/div/button", "xpath:idRelative"],
+        ["xpath=//div[12]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'アカウント作成')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72eead1d-fe62-45f3-917e-22ddd66cff56",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "tanaka@test.com"
+    }, {
+      "id": "9ddac4bb-842a-422c-bead-5bb9e521f0e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[12]/div/button", "xpath:idRelative"],
+        ["xpath=//div[12]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'アカウント作成')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "30c114f1-e63b-4959-93db-c7f368b26190",
+      "comment": "",
+      "command": "type",
+      "target": "id=zipcode",
+      "targets": [
+        ["id=zipcode", "id"],
+        ["name=zipcode", "name"],
+        ["css=#zipcode", "css:finder"],
+        ["xpath=//input[@id='zipcode']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "１０４００６１"
+    }, {
+      "id": "18c8c033-ad1a-4f24-b766-f67af4b71ad9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[12]/div/button", "xpath:idRelative"],
+        ["xpath=//div[12]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'アカウント作成')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb1ea67f-a53e-4396-b4db-c4bad8ca82a8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.form-group:nth-child(5) strong",
+      "targets": [
+        ["css=.form-group:nth-child(5) strong", "css:finder"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[4]/div/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'正しい形式の郵便番号を指定してください。')]", "xpath:innerText"]
+      ],
+      "value": "正しい形式の郵便番号を指定してください。"
+    }, {
+      "id": "2a7fd2ca-f415-4f2d-9bca-189a185d4bf7",
+      "comment": "",
+      "command": "type",
+      "target": "id=zipcode",
+      "targets": [
+        ["id=zipcode", "id"],
+        ["name=zipcode", "name"],
+        ["css=#zipcode", "css:finder"],
+        ["xpath=//input[@id='zipcode']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "１０４ー００６１"
+    }, {
+      "id": "afd7cf70-51bd-4895-8f74-bad13bc75bf7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[12]/div/button", "xpath:idRelative"],
+        ["xpath=//div[12]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'アカウント作成')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40eea2e6-80a2-4465-9073-fe5f0dda76c0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.form-group:nth-child(5) strong",
+      "targets": [
+        ["css=.form-group:nth-child(5) strong", "css:finder"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[4]/div/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'正しい形式の郵便番号を指定してください。')]", "xpath:innerText"]
+      ],
+      "value": "正しい形式の郵便番号を指定してください。"
+    }, {
+      "id": "4355acb7-b18b-41e9-93fd-129a6fde77b7",
+      "comment": "",
+      "command": "type",
+      "target": "id=zipcode",
+      "targets": [
+        ["id=zipcode", "id"],
+        ["name=zipcode", "name"],
+        ["css=#zipcode", "css:finder"],
+        ["xpath=//input[@id='zipcode']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "104-006"
+    }, {
+      "id": "ba96559e-a26c-4e74-af84-73c5ac637d95",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[12]/div/button", "xpath:idRelative"],
+        ["xpath=//div[12]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'アカウント作成')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0faf5208-4ab2-4418-8160-22f25eac2f13",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.form-group:nth-child(5) strong",
+      "targets": [
+        ["css=.form-group:nth-child(5) strong", "css:finder"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[4]/div/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'正しい形式の郵便番号を指定してください。')]", "xpath:innerText"]
+      ],
+      "value": "正しい形式の郵便番号を指定してください。"
+    }, {
+      "id": "f537851b-8666-4611-b96b-036b6b784e30",
+      "comment": "",
+      "command": "type",
+      "target": "id=zipcode",
+      "targets": [
+        ["id=zipcode", "id"],
+        ["name=zipcode", "name"],
+        ["css=#zipcode", "css:finder"],
+        ["xpath=//input[@id='zipcode']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "104-0061"
+    }, {
+      "id": "d39138b9-b227-4419-98df-1f07d0da124f",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[10]/div/input", "xpath:idRelative"],
+        ["xpath=//div[10]/div/input", "xpath:position"]
+      ],
+      "value": "123abc@"
+    }, {
+      "id": "27a5a524-8524-4682-878e-24258ef54d2d",
+      "comment": "",
+      "command": "type",
+      "target": "id=password-confirm",
+      "targets": [
+        ["id=password-confirm", "id"],
+        ["name=password_confirmation", "name"],
+        ["css=#password-confirm", "css:finder"],
+        ["xpath=//input[@id='password-confirm']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[11]/div/input", "xpath:idRelative"],
+        ["xpath=//div[11]/div/input", "xpath:position"]
+      ],
+      "value": "123abc@"
+    }, {
+      "id": "cb43a6d8-ff71-47ad-9134-50623f4c4734",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[12]/div/button", "xpath:idRelative"],
+        ["xpath=//div[12]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'アカウント作成')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "30bb42a8-bc44-4d36-9a96-d68b69ae76e7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.form-group:nth-child(11) strong",
+      "targets": [
+        ["css=.form-group:nth-child(11) strong", "css:finder"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[10]/div/span/strong", "xpath:idRelative"],
+        ["xpath=//div[10]/div/span/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'パスワードには8文字以上の文字列を指定してください。')]", "xpath:innerText"]
+      ],
+      "value": "パスワードには8文字以上の文字列を指定してください。"
+    }, {
+      "id": "ff05e1a4-5ecf-462e-9155-d861bc6311ab",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[10]/div/input", "xpath:idRelative"],
+        ["xpath=//div[10]/div/input", "xpath:position"]
+      ],
+      "value": "1234abcd"
+    }, {
+      "id": "6c279142-09e0-4183-b6ef-3b57b899b5bd",
+      "comment": "",
+      "command": "type",
+      "target": "id=password-confirm",
+      "targets": [
+        ["id=password-confirm", "id"],
+        ["name=password_confirmation", "name"],
+        ["css=#password-confirm", "css:finder"],
+        ["xpath=//input[@id='password-confirm']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[11]/div/input", "xpath:idRelative"],
+        ["xpath=//div[11]/div/input", "xpath:position"]
+      ],
+      "value": "1234abcd"
+    }, {
+      "id": "89660578-13eb-4b15-bf2e-68f0727ea6f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[12]/div/button", "xpath:idRelative"],
+        ["xpath=//div[12]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'アカウント作成')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef27b81e-43d0-430e-9c3e-b84838696c9c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.invalid-feedback",
+      "targets": [
+        ["css=.invalid-feedback", "css:finder"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[10]/div/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'正しい形式のパスワードを指定してください。')]", "xpath:innerText"]
+      ],
+      "value": "正しい形式のパスワードを指定してください。"
+    }, {
+      "id": "962eec5f-c02a-4609-b268-dd6d360a2114",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[10]/div/input", "xpath:idRelative"],
+        ["xpath=//div[10]/div/input", "xpath:position"]
+      ],
+      "value": "1234@@@@"
+    }, {
+      "id": "43c8ed3b-19c9-444b-9f90-64129b723062",
+      "comment": "",
+      "command": "type",
+      "target": "id=password-confirm",
+      "targets": [
+        ["id=password-confirm", "id"],
+        ["name=password_confirmation", "name"],
+        ["css=#password-confirm", "css:finder"],
+        ["xpath=//input[@id='password-confirm']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[11]/div/input", "xpath:idRelative"],
+        ["xpath=//div[11]/div/input", "xpath:position"]
+      ],
+      "value": "1234@@@@"
+    }, {
+      "id": "d42e742c-2175-4b14-9b88-c3d2e9d06627",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[12]/div/button", "xpath:idRelative"],
+        ["xpath=//div[12]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'アカウント作成')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc32125e-3fc2-4ebf-ac5b-68b7443459ff",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.invalid-feedback",
+      "targets": [
+        ["css=.invalid-feedback", "css:finder"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[10]/div/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'正しい形式のパスワードを指定してください。')]", "xpath:innerText"]
+      ],
+      "value": "正しい形式のパスワードを指定してください。"
+    }, {
+      "id": "30c72b92-acb2-4f16-a2ad-9b859d80cc14",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[10]/div/input", "xpath:idRelative"],
+        ["xpath=//div[10]/div/input", "xpath:position"]
+      ],
+      "value": "abcd@@@@"
+    }, {
+      "id": "ca533513-4aa8-414f-b379-e42c33f7616d",
+      "comment": "",
+      "command": "type",
+      "target": "id=password-confirm",
+      "targets": [
+        ["id=password-confirm", "id"],
+        ["name=password_confirmation", "name"],
+        ["css=#password-confirm", "css:finder"],
+        ["xpath=//input[@id='password-confirm']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[11]/div/input", "xpath:idRelative"],
+        ["xpath=//div[11]/div/input", "xpath:position"]
+      ],
+      "value": "abcd@@@@"
+    }, {
+      "id": "5bae7612-cf95-43ee-9a7e-17f44b932d1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[12]/div/button", "xpath:idRelative"],
+        ["xpath=//div[12]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'アカウント作成')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f067616f-874a-48f4-811c-b9ade4833c85",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.invalid-feedback",
+      "targets": [
+        ["css=.invalid-feedback", "css:finder"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[10]/div/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'正しい形式のパスワードを指定してください。')]", "xpath:innerText"]
+      ],
+      "value": "正しい形式のパスワードを指定してください。"
+    }, {
+      "id": "3b9a1071-504c-432a-9a7d-c3f6ef54d6ef",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[10]/div/input", "xpath:idRelative"],
+        ["xpath=//div[10]/div/input", "xpath:position"]
+      ],
+      "value": "1234abc@"
+    }, {
+      "id": "804c9ae8-c049-4759-82f7-a338fca1c0a6",
+      "comment": "",
+      "command": "type",
+      "target": "id=password-confirm",
+      "targets": [
+        ["id=password-confirm", "id"],
+        ["name=password_confirmation", "name"],
+        ["css=#password-confirm", "css:finder"],
+        ["xpath=//input[@id='password-confirm']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[11]/div/input", "xpath:idRelative"],
+        ["xpath=//div[11]/div/input", "xpath:position"]
+      ],
+      "value": "abc1234@"
+    }, {
+      "id": "890b2d89-92ce-4a67-bfd1-f23ee9a7905d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[12]/div/button", "xpath:idRelative"],
+        ["xpath=//div[12]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'アカウント作成')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "718f6ccc-733c-4b0d-b323-71b0bb579f8a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.invalid-feedback",
+      "targets": [
+        ["css=.invalid-feedback", "css:finder"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[10]/div/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'パスワードが確認用の値と一致しません。')]", "xpath:innerText"]
+      ],
+      "value": "パスワードが確認用の値と一致しません。"
+    }, {
+      "id": "e4e26934-9eb1-4053-8a7b-f2e31f8e7398",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[10]/div/input", "xpath:idRelative"],
+        ["xpath=//div[10]/div/input", "xpath:position"]
+      ],
+      "value": "1234abc@"
+    }, {
+      "id": "ef625469-10fe-480b-ae50-945f121994c3",
+      "comment": "",
+      "command": "type",
+      "target": "id=password-confirm",
+      "targets": [
+        ["id=password-confirm", "id"],
+        ["name=password_confirmation", "name"],
+        ["css=#password-confirm", "css:finder"],
+        ["xpath=//input[@id='password-confirm']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[11]/div/input", "xpath:idRelative"],
+        ["xpath=//div[11]/div/input", "xpath:position"]
+      ],
+      "value": "1234abc@"
+    }, {
+      "id": "e3226f03-c340-49da-a4bd-9c3d1ee8282b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[12]/div/button", "xpath:idRelative"],
+        ["xpath=//div[12]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'アカウント作成')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "acc3956c-51b0-4b40-a696-17a8771ef828",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbarDropdown",
+      "targets": [
+        ["id=navbarDropdown", "id"],
+        ["linkText=user", "linkText"],
+        ["css=#navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'user')]", "xpath:link"],
+        ["xpath=//a[@id='navbarDropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul[2]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6787354-eb4b-42ba-8a15-0a9d9aabac54",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ログアウト",
+      "targets": [
+        ["linkText=ログアウト", "linkText"],
+        ["css=.dropdown-item", "css:finder"],
+        ["xpath=//a[contains(text(),'ログアウト')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"event.preventDefault();\n                                                     document.getElementById('logout-form').submit();\"]", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul[2]/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/logout']", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログアウト')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff1bca24-34c0-4696-b88b-bd9f1f1a7a18",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_name_id",
+      "targets": [
+        ["id=user_name_id", "id"],
+        ["name=user_name_id", "name"],
+        ["css=#user_name_id", "css:finder"],
+        ["xpath=//input[@id='user_name_id']", "xpath:attributes"],
         ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div/div/input", "xpath:idRelative"],
         ["xpath=//div/input", "xpath:position"]
       ],
-      "value": "user1@test.com"
+      "value": "user"
     }, {
-      "id": "aafb72cc-671b-4d1b-bac4-02ef0915828e",
+      "id": "1a1aa8bb-bb86-4e12-a809-8311f7375a15",
       "comment": "",
       "command": "type",
       "target": "id=password",
@@ -47,9 +773,9 @@
         ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[2]/div/input", "xpath:idRelative"],
         ["xpath=//div[2]/div/input", "xpath:position"]
       ],
-      "value": "12345678"
+      "value": "1234abc@"
     }, {
-      "id": "156d3d18-cdd1-4369-b880-d0a7f38f7cf2",
+      "id": "d0b70940-05b0-412d-9f7e-dc166077fe00",
       "comment": "",
       "command": "click",
       "target": "css=.btn-primary",
@@ -60,370 +786,23 @@
         ["xpath=//div[4]/div/button", "xpath:position"],
         ["xpath=//button[contains(.,'ログイン')]", "xpath:innerText"]
       ],
-      "value": "${KEY_ENTER}"
+      "value": ""
     }, {
-      "id": "5f2497b1-051e-4122-9e69-9b68176e4109",
+      "id": "25df0c50-0e8e-48f9-a7d4-0b7ef3b731fa",
       "comment": "",
       "command": "verifyElementPresent",
-      "target": "linkText=ビニールテープ",
+      "target": "id=navbarDropdown",
       "targets": [],
       "value": ""
-    }, {
-      "id": "805e7cf5-6bdc-460e-b2e8-e3593482a1fa",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "linkText=ティッシュペーパー",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "3bf70ae2-600d-4ba8-9ba9-ad4e3cff1543",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "linkText=トマトジュース",
-      "targets": [
-        ["linkText=トマトジュース", "linkText"],
-        ["css=.d-flex:nth-child(4) a", "css:finder"],
-        ["xpath=//a[contains(text(),'トマトジュース')]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[4]/div/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/item/3']", "xpath:href"],
-        ["xpath=//div[4]/div/a", "xpath:position"],
-        ["xpath=//a[contains(.,'トマトジュース')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "d02c7e00-920a-48b4-9269-c49ee5641b96",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "linkText=トイレットペーパー",
-      "targets": [
-        ["linkText=トイレットペーパー", "linkText"],
-        ["css=.d-flex:nth-child(5) a", "css:finder"],
-        ["xpath=//a[contains(text(),'トイレットペーパー')]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[5]/div/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/item/4']", "xpath:href"],
-        ["xpath=//div[5]/div/a", "xpath:position"],
-        ["xpath=//a[contains(.,'トイレットペーパー')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "f591a886-b742-472f-8b4b-b4b5843bcc5b",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "linkText=DVDディスク",
-      "targets": [
-        ["linkText=DVDディスク", "linkText"],
-        ["css=.d-flex:nth-child(6) a", "css:finder"],
-        ["xpath=//a[contains(text(),'DVDディスク')]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[6]/div/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/item/5']", "xpath:href"],
-        ["xpath=//div[6]/div/a", "xpath:position"],
-        ["xpath=//a[contains(.,'DVDディスク')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "1ffd22cd-d53d-4615-b88a-e63669326e95",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "linkText=砂糖",
-      "targets": [
-        ["linkText=砂糖", "linkText"],
-        ["css=.d-flex:nth-child(7) a", "css:finder"],
-        ["xpath=//a[contains(text(),'砂糖')]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[7]/div/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/item/6']", "xpath:href"],
-        ["xpath=//div[7]/div/a", "xpath:position"],
-        ["xpath=//a[contains(.,'砂糖')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "c584d7d3-fc2d-41ad-b02d-44c1ea9e104c",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "linkText=お菓子",
-      "targets": [
-        ["linkText=お菓子", "linkText"],
-        ["css=.d-flex:nth-child(8) a", "css:finder"],
-        ["xpath=//a[contains(text(),'お菓子')]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[8]/div/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/item/7']", "xpath:href"],
-        ["xpath=//div[8]/div/a", "xpath:position"],
-        ["xpath=//a[contains(.,'お菓子')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "a0e7e412-9d42-4b82-afd6-336fe249cf76",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "linkText=こしょう",
-      "targets": [
-        ["linkText=こしょう", "linkText"],
-        ["css=.d-flex:nth-child(9) a", "css:finder"],
-        ["xpath=//a[contains(text(),'こしょう')]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[9]/div/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/item/8']", "xpath:href"],
-        ["xpath=//div[9]/div/a", "xpath:position"],
-        ["xpath=//a[contains(.,'こしょう')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "33344c5e-e7c9-4e80-b240-d1c9fb8e60c6",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "linkText=雑誌",
-      "targets": [
-        ["linkText=雑誌", "linkText"],
-        ["css=.d-flex:nth-child(10) a", "css:finder"],
-        ["xpath=//a[contains(text(),'雑誌')]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[10]/div/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/item/9']", "xpath:href"],
-        ["xpath=//div[10]/div/a", "xpath:position"],
-        ["xpath=//a[contains(.,'雑誌')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "8ffed10b-126f-4db7-bf5a-152b54d94cdf",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "linkText=ネジ",
-      "targets": [
-        ["linkText=ネジ", "linkText"],
-        ["css=.d-flex:nth-child(11) a", "css:finder"],
-        ["xpath=//a[contains(text(),'ネジ')]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[11]/div/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/item/10']", "xpath:href"],
-        ["xpath=//div[11]/div/a", "xpath:position"],
-        ["xpath=//a[contains(.,'ネジ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "2bf7b356-8519-48a9-a932-5cacb12b4a05",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.d-flex:nth-child(2) > .item-name:nth-child(3)",
-      "targets": [
-        ["css=.d-flex:nth-child(2) > .item-name:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[2]/div[3]", "xpath:idRelative"],
-        ["xpath=//div[2]/div[3]", "xpath:position"]
-      ],
-      "value": "¥150"
-    }, {
-      "id": "62887cbd-94b2-46ac-9195-78b83d4edbbd",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.d-flex:nth-child(3) > .item-name:nth-child(3)",
-      "targets": [
-        ["css=.d-flex:nth-child(3) > .item-name:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[3]/div[3]", "xpath:idRelative"],
-        ["xpath=//div[3]/div[3]", "xpath:position"]
-      ],
-      "value": "¥300"
-    }, {
-      "id": "a445f433-fef7-47f0-8c27-0c3506bfa59a",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.d-flex:nth-child(4) > .item-name:nth-child(3)",
-      "targets": [
-        ["css=.d-flex:nth-child(4) > .item-name:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[4]/div[3]", "xpath:idRelative"],
-        ["xpath=//div[4]/div[3]", "xpath:position"]
-      ],
-      "value": "¥120"
-    }, {
-      "id": "6a3f3cb4-11ac-40e9-8ca5-36fae97f1f31",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.d-flex:nth-child(5) > .item-name:nth-child(3)",
-      "targets": [
-        ["css=.d-flex:nth-child(5) > .item-name:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[5]/div[3]", "xpath:idRelative"],
-        ["xpath=//div[5]/div[3]", "xpath:position"]
-      ],
-      "value": "¥250"
-    }, {
-      "id": "b99b7aa3-dc05-4212-9603-b35cfde37591",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.d-flex:nth-child(6) > .item-name:nth-child(3)",
-      "targets": [
-        ["css=.d-flex:nth-child(6) > .item-name:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[6]/div[3]", "xpath:idRelative"],
-        ["xpath=//div[6]/div[3]", "xpath:position"]
-      ],
-      "value": "¥1500"
-    }, {
-      "id": "8727e659-3951-457d-957c-c27eb9b50026",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.d-flex:nth-child(7) > .item-name:nth-child(3)",
-      "targets": [
-        ["css=.d-flex:nth-child(7) > .item-name:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[7]/div[3]", "xpath:idRelative"],
-        ["xpath=//div[7]/div[3]", "xpath:position"]
-      ],
-      "value": "¥200"
-    }, {
-      "id": "c78075d5-4067-4ac1-a4ff-4ed53951dce2",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.d-flex:nth-child(8) > .item-name:nth-child(3)",
-      "targets": [
-        ["css=.d-flex:nth-child(8) > .item-name:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[8]/div[3]", "xpath:idRelative"],
-        ["xpath=//div[8]/div[3]", "xpath:position"]
-      ],
-      "value": "¥300"
-    }, {
-      "id": "69f87240-aed1-49a3-8f11-8bdc154dac58",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.d-flex:nth-child(9) > .item-name:nth-child(3)",
-      "targets": [
-        ["css=.d-flex:nth-child(9) > .item-name:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[9]/div[3]", "xpath:idRelative"],
-        ["xpath=//div[9]/div[3]", "xpath:position"]
-      ],
-      "value": "¥150"
-    }, {
-      "id": "c19b85e3-c34d-469c-90b6-5f0f29a5cc73",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.d-flex:nth-child(10) > .item-name:nth-child(3)",
-      "targets": [
-        ["css=.d-flex:nth-child(10) > .item-name:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[10]/div[3]", "xpath:idRelative"],
-        ["xpath=//div[10]/div[3]", "xpath:position"]
-      ],
-      "value": "¥600"
-    }, {
-      "id": "98e977ab-2490-4ebf-8edd-e92f78e7d632",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.d-flex:nth-child(11) > .item-name:nth-child(3)",
-      "targets": [
-        ["css=.d-flex:nth-child(11) > .item-name:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[11]/div[3]", "xpath:idRelative"],
-        ["xpath=//div[11]/div[3]", "xpath:position"]
-      ],
-      "value": "¥300"
-    }, {
-      "id": "f5ae9bee-638c-4b13-abda-de84a012a5db",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.d-flex:nth-child(2) > .item-name:nth-child(4)",
-      "targets": [
-        ["css=.d-flex:nth-child(2) > .item-name:nth-child(4)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[2]/div[4]", "xpath:idRelative"],
-        ["xpath=//div[2]/div[4]", "xpath:position"]
-      ],
-      "value": "2021-03-19"
-    }, {
-      "id": "0d1c0586-01da-44ae-b1b8-8fb99c78ce9c",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.d-flex:nth-child(3) > .item-name:nth-child(4)",
-      "targets": [
-        ["css=.d-flex:nth-child(3) > .item-name:nth-child(4)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[3]/div[4]", "xpath:idRelative"],
-        ["xpath=//div[3]/div[4]", "xpath:position"]
-      ],
-      "value": "2021-03-19"
-    }, {
-      "id": "b12022a2-bc33-4274-91ba-1af3b1851735",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.d-flex:nth-child(4) > .item-name:nth-child(4)",
-      "targets": [
-        ["css=.d-flex:nth-child(4) > .item-name:nth-child(4)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[4]/div[4]", "xpath:idRelative"],
-        ["xpath=//div[4]/div[4]", "xpath:position"]
-      ],
-      "value": "2021-03-18"
-    }, {
-      "id": "b23448fe-4905-4f6c-b488-0e12151bf3c1",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.d-flex:nth-child(5) > .item-name:nth-child(4)",
-      "targets": [
-        ["css=.d-flex:nth-child(5) > .item-name:nth-child(4)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[5]/div[4]", "xpath:idRelative"],
-        ["xpath=//div[5]/div[4]", "xpath:position"]
-      ],
-      "value": "2021-03-16"
-    }, {
-      "id": "e1ec3897-4980-4b8a-9bdf-d25606879550",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.d-flex:nth-child(6) > .item-name:nth-child(4)",
-      "targets": [
-        ["css=.d-flex:nth-child(6) > .item-name:nth-child(4)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[6]/div[4]", "xpath:idRelative"],
-        ["xpath=//div[6]/div[4]", "xpath:position"]
-      ],
-      "value": "2021-03-15"
-    }, {
-      "id": "8a7e1dec-b86e-4f83-a772-567cf08fd4b8",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.d-flex:nth-child(7) > .item-name:nth-child(4)",
-      "targets": [
-        ["css=.d-flex:nth-child(7) > .item-name:nth-child(4)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[7]/div[4]", "xpath:idRelative"],
-        ["xpath=//div[7]/div[4]", "xpath:position"]
-      ],
-      "value": "2021-03-14"
-    }, {
-      "id": "d7e162fc-42ae-45ce-bbb3-47841c67e345",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.d-flex:nth-child(8) > .item-name:nth-child(4)",
-      "targets": [
-        ["css=.d-flex:nth-child(8) > .item-name:nth-child(4)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[8]/div[4]", "xpath:idRelative"],
-        ["xpath=//div[8]/div[4]", "xpath:position"]
-      ],
-      "value": "2021-03-13"
-    }, {
-      "id": "b8824f1e-dfab-4957-97c5-f75a6347d0c0",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.d-flex:nth-child(9) > .item-name:nth-child(4)",
-      "targets": [
-        ["css=.d-flex:nth-child(9) > .item-name:nth-child(4)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[9]/div[4]", "xpath:idRelative"],
-        ["xpath=//div[9]/div[4]", "xpath:position"]
-      ],
-      "value": "2021-02-16"
-    }, {
-      "id": "aa0bb1d3-706e-4af4-8379-23d615f627d9",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.d-flex:nth-child(10) > .item-name:nth-child(4)",
-      "targets": [
-        ["css=.d-flex:nth-child(10) > .item-name:nth-child(4)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[10]/div[4]", "xpath:idRelative"],
-        ["xpath=//div[10]/div[4]", "xpath:position"]
-      ],
-      "value": "2021-02-15"
-    }, {
-      "id": "5f46049c-1bfa-4726-8007-c4862a5058ba",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.d-flex:nth-child(11) > .item-name:nth-child(4)",
-      "targets": [
-        ["css=.d-flex:nth-child(11) > .item-name:nth-child(4)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div[2]/div/div[11]/div[4]", "xpath:idRelative"],
-        ["xpath=//div[11]/div[4]", "xpath:position"]
-      ],
-      "value": "2021-02-13"
     }]
   }],
   "suites": [{
-    "id": "61ff1ebf-baea-4252-9284-10f8618e0c2f",
+    "id": "0de16d18-91e2-4943-be49-28a925a6a17d",
     "name": "Default Suite",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["55a365e4-5aa0-4ade-ac08-bc6cdf6e583b"]
+    "tests": ["81f1a3a8-34da-48b1-9abb-8ba8c29374d8"]
   }],
   "urls": ["http://localhost/"],
   "plugins": []
