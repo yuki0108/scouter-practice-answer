@@ -27,6 +27,10 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('/home' , 'HomeController@index' );
     Route::get('/reservations/index' , 'ReservationController@index' )
         ->name('reservations.index');
+    Route::get('/reservations/create' , 'ReservationController@create' )
+        ->name('reservations.create');
+    Route::post('/reservations/store' , 'ReservationController@store' )
+        ->name('reservations.store');
     Route::get('/reservations/edit/{id}', 'ReservationController@edit')
         ->name('reservations.edit');
     Route::put('/reservations/update', 'ReservationController@update')

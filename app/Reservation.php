@@ -57,5 +57,9 @@ class Reservation extends Model
      */
     public function getNextReservationNumber()
     {
+        $maxReservationNumber = DB::table('reservations')->max('reservation_number');
+        $nextInt = 1 + (int)$maxReservationNumber;
+        $nextReservationNumber = str_pad($nextInt, 6, 0, STR_PAD_LEFT);
+        return $nextReservationNumber;
     }
 }
