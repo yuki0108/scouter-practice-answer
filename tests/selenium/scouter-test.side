@@ -441,7 +441,8 @@
         ["xpath=//button[contains(.,'会議室を予約')]", "xpath:innerText"]
       ],
       "value": ""
-    }],
+    }]
+  }],
   "suites": [{
     "id": "1a3df50a-5350-4834-9ed9-baabfc57bc8d",
     "name": "Default Suite",
