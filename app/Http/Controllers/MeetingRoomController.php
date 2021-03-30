@@ -73,7 +73,6 @@ class MeetingRoomController extends Controller
             $meetingRoom = new MeetingRoom();
             $meetingRoom->name = $request->name;
             $meetingRoom->max_use_hour = $request->max_use_hour;
-            $meetingRoom->needs_approval = $request->needs_approval;
             $meetingRoom->save();
 
             return redirect(route('rooms.index'));
@@ -126,7 +125,6 @@ class MeetingRoomController extends Controller
                 ->update(['id' => $request->id,
                     'name' => $request->name,
                     'max_use_hour' => $request->max_use_hour,
-                    'needs_approval' => $request->needs_approval]);
         }
 
         return redirect(route('rooms.index'));

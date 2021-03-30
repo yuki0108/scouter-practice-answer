@@ -226,14 +226,8 @@ class ReservationController extends Controller
      * @param Request $request
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function approve(Request $request)
+    public function approve()
     {
-        if (Auth::user()->is_administrator) {
-            // ログインしているのが管理者の場合のみ実行
-            Reservation::where('id', $request->id)
-                ->update(['is_approved' => true]);
-        }
-        return redirect(route('reservations.index'));
     }
 
     /**
@@ -241,13 +235,7 @@ class ReservationController extends Controller
      * @param Request $request
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function reject(Request $request)
+    public function reject()
     {
-        if (Auth::user()->is_administrator) {
-            // ログインしているのが管理者の場合のみ実行
-            Reservation::where('id', $request->id)
-                ->update(['is_approved' => false]);
-        }
-        return redirect(route('reservations.index'));
     }
 }
