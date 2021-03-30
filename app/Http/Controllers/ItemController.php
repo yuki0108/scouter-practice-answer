@@ -14,6 +14,13 @@ class ItemController extends Controller
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector|\Illuminate\View\View
      */
     public function create(){
+        if (Auth::user()->is_administrator) {
+            // 管理者の場合
+            return view('item_create');
+        } else {
+            // 一般ユーザーの場合
+            return redirect('/');
+        }
     }
 
     /**
@@ -21,7 +28,23 @@ class ItemController extends Controller
      * @param Request $request
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function store()
+    public function store(Request $request)
     {
+        if (Auth::user()->is_administrator) {
+            // 管理者の場合
+            $request->validate([
+                'item_name' => 'required|max:255',
+            ]);
+
+            $item = new Item();
+            $item->name = $request->item_name;
+            $item->save();
+
+            return redirect('/');
+        } else {
+            // 一般ユーザーの場合
+            return redirect('/');
+        }
+
     }
 }
