@@ -579,13 +579,6 @@
       ],
       "value": "削除"
     }, {
-      "id": "27b0f338-0c45-4790-b3f7-180ec83bcdc2",
-      "comment": "",
-      "command": "select",
-      "target": "id=meeting_room_id",
-      "targets": [],
-      "value": "label=会議室C (承認制)"
-    }, {
       "id": "3c839d8f-6e3e-417f-8dea-bdf91badf434",
       "comment": "",
       "command": "type",
@@ -653,18 +646,6 @@
         ["xpath=//button[contains(.,'予約を修正')]", "xpath:innerText"]
       ],
       "value": ""
-    }, {
-      "id": "6f8e478e-1781-4466-8e0d-17bec8dee8e0",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(2) > td:nth-child(2)",
-      "targets": [
-        ["css=tr:nth-child(2) > td:nth-child(2)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td[2]", "xpath:idRelative"],
-        ["xpath=//td[2]", "xpath:position"],
-        ["xpath=//td[contains(.,'会議室C (承認制)')]", "xpath:innerText"]
-      ],
-      "value": "会議室C (承認制)"
     }, {
       "id": "2a4d275f-5fe1-4256-a32e-3482b8ed3945",
       "comment": "",
