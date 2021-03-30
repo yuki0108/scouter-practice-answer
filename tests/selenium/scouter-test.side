@@ -441,19 +441,7 @@
         ["xpath=//button[contains(.,'会議室を予約')]", "xpath:innerText"]
       ],
       "value": ""
-    }, {
-      "id": "b7a55257-8745-44c8-9084-459e039c1215",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(8) > td:nth-child(5)",
-      "targets": [
-        ["css=tr:nth-child(8) > td:nth-child(5)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[8]/td[5]", "xpath:idRelative"],
-        ["xpath=//tr[8]/td[5]", "xpath:position"]
-      ],
-      "value": "プロジェクター\\nマイク\\nパーテーション\\nモニター1"
-    }]
-  }],
+    }],
   "suites": [{
     "id": "1a3df50a-5350-4834-9ed9-baabfc57bc8d",
     "name": "Default Suite",
