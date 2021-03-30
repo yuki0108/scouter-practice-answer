@@ -759,7 +759,7 @@
         ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div/div/input", "xpath:idRelative"],
         ["xpath=//div/input", "xpath:position"]
       ],
-      "value": "user"
+      "value": "user6"
     }, {
       "id": "1a1aa8bb-bb86-4e12-a809-8311f7375a15",
       "comment": "",
