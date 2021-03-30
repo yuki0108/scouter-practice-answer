@@ -179,6 +179,13 @@
       ],
       "value": ""
     }, {
+      "id": "5a80ef6d-2403-4aa3-9a5e-88acf3e631a6",
+      "comment": "",
+      "command": "executeScript",
+      "target": "date = new Date; return date.getFullYear()+'-'+(\"0\"+(date.getMonth() + 2)).slice(-2)+'-'+(\"0\"+date.getDate()).slice(-2)+'T'+(\"0\"+date.getHours()).slice(-2)+':'+(\"0\"+date.getMinutes()).slice(-2)",
+      "targets": [],
+      "value": "this_date"
+    }, {
       "id": "890b9ad3-5e09-48e5-98fe-f90706f9ebb9",
       "comment": "",
       "command": "type",
@@ -191,7 +198,7 @@
         ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[2]/div/input", "xpath:idRelative"],
         ["xpath=//div/input", "xpath:position"]
       ],
-      "value": "2021-03-29T15:00"
+      "value": "${this_date}"
     }, {
       "id": "b4e27996-7b4d-49bd-b17d-3fa3ab3197f8",
       "comment": "",
@@ -206,6 +213,13 @@
       ],
       "value": ""
     }, {
+      "id": "ee481435-b3e7-4e3d-8750-f4367f4ba3de",
+      "comment": "",
+      "command": "executeScript",
+      "target": "date = new Date; return date.getFullYear()+'-'+(\"0\"+(date.getMonth() + 2)).slice(-2)+'-'+(\"0\"+date.getDate()).slice(-2)+'T'+(\"0\"+(date.getHours() +1)).slice(-2)+':'+(\"0\"+date.getMinutes()).slice(-2)",
+      "targets": [],
+      "value": "this_date_end"
+    }, {
       "id": "feafeec4-9e19-4833-9445-50dcf26a5519",
       "comment": "",
       "command": "type",
@@ -218,7 +232,7 @@
         ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[3]/div/input", "xpath:idRelative"],
         ["xpath=//div[3]/div/input", "xpath:position"]
       ],
-      "value": "2021-03-29T17:00"
+      "value": "${this_date_end}"
     }, {
       "id": "a7e21711-5631-4394-9763-07545f88249e",
       "comment": "",
@@ -291,30 +305,6 @@
         ["xpath=//tr[8]/td[5]", "xpath:position"]
       ],
       "value": "プロジェクター"
-    }, {
-      "id": "01d5b86f-d277-40ff-8c14-fd446ec33d29",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(8) > td:nth-child(7)",
-      "targets": [
-        ["css=tr:nth-child(8) > td:nth-child(7)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[8]/td[7]", "xpath:idRelative"],
-        ["xpath=//tr[8]/td[7]", "xpath:position"],
-        ["xpath=//td[contains(.,'2021年03月29日15時00分')]", "xpath:innerText"]
-      ],
-      "value": "2021年03月29日15時00分"
-    }, {
-      "id": "2812bb78-f0f9-465c-a9d9-dfa7ffd064c0",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(8) > td:nth-child(8)",
-      "targets": [
-        ["css=tr:nth-child(8) > td:nth-child(8)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[8]/td[8]", "xpath:idRelative"],
-        ["xpath=//tr[8]/td[8]", "xpath:position"],
-        ["xpath=//td[contains(.,'2021年03月29日17時00分')]", "xpath:innerText"]
-      ],
-      "value": "2021年03月29日17時00分"
     }]
   }],
   "suites": [{
