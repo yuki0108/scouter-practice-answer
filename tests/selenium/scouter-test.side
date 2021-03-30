@@ -261,21 +261,6 @@
       ],
       "value": "編集"
     }, {
-      "id": "4e35f8b2-e1f7-4a08-9185-848488337245",
-      "comment": "",
-      "command": "verifyText",
-      "target": "linkText=削除",
-      "targets": [
-        ["linkText=削除", "linkText"],
-        ["css=tr:nth-child(2) .btn-danger", "css:finder"],
-        ["xpath=//a[contains(text(),'削除')]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td[11]/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/reservations/delete/2']", "xpath:href"],
-        ["xpath=//td[11]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'削除')]", "xpath:innerText"]
-      ],
-      "value": "削除"
-    }, {
       "id": "9f479aee-892d-4ebd-ac75-641800c3108d",
       "comment": "",
       "command": "verifyText",
@@ -430,33 +415,6 @@
         ["xpath=//button[contains(.,'予約を修正')]", "xpath:innerText"]
       ],
       "value": ""
-    }, {
-      "id": "6c10e809-fdab-4733-99c8-3bd8de032049",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=削除",
-      "targets": [
-        ["linkText=削除", "linkText"],
-        ["css=tr:nth-child(2) .btn-danger", "css:finder"],
-        ["xpath=//a[contains(text(),'削除')]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td[11]/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/reservations/delete/1']", "xpath:href"],
-        ["xpath=//td[11]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'削除')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "9466125c-48a8-4b47-a86a-2edfebc05920",
-      "comment": "",
-      "command": "verifyNotText",
-      "target": "css=tr:nth-child(2) > td:nth-child(1)",
-      "targets": [
-        ["css=tr:nth-child(2) > td:nth-child(1)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td", "xpath:idRelative"],
-        ["xpath=//td", "xpath:position"],
-        ["xpath=//td[contains(.,'000002')]", "xpath:innerText"]
-      ],
-      "value": "000001"
     }]
   }],
   "suites": [{
