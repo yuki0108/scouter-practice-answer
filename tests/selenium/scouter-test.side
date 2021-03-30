@@ -260,51 +260,6 @@
         ["xpath=//button[contains(.,'会議室を予約')]", "xpath:innerText"]
       ],
       "value": ""
-    }, {
-      "id": "85a76e1a-a160-4dbd-a973-05203cc28651",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(7) > td:nth-child(1)",
-      "targets": [
-        ["css=tr:nth-child(7) > td:nth-child(1)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[8]/td", "xpath:idRelative"],
-        ["xpath=//tr[8]/td", "xpath:position"],
-        ["xpath=//td[contains(.,'000007')]", "xpath:innerText"]
-      ],
-      "value": "000007"
-    }, {
-      "id": "42efb223-d549-4c4b-8f86-675e8c06d5f8",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(7) > td:nth-child(2)",
-      "targets": [
-        ["css=tr:nth-child(7) > td:nth-child(2)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[8]/td[2]", "xpath:idRelative"],
-        ["xpath=//tr[8]/td[2]", "xpath:position"]
-      ],
-      "value": "会議室B (上限3時間)"
-    }, {
-      "id": "fab5504d-88f8-4917-91bd-3ff3fdfd93fc",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(7) > td:nth-child(4)",
-      "targets": [
-        ["css=tr:nth-child(7) > td:nth-child(4)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[8]/td[4]", "xpath:idRelative"],
-        ["xpath=//tr[8]/td[4]", "xpath:position"]
-      ],
-      "value": "テスト太郎2"
-    }, {
-      "id": "b24a42c0-447d-433c-b7bf-81287a13a1a6",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(7) > td:nth-child(5)",
-      "targets": [
-        ["css=tr:nth-child(7) > td:nth-child(5)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[8]/td[5]", "xpath:idRelative"],
-        ["xpath=//tr[8]/td[5]", "xpath:position"]
-      ],
-      "value": "プロジェクター"
     }]
   }],
   "suites": [{
