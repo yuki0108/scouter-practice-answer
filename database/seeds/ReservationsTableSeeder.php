@@ -14,6 +14,28 @@ class ReservationsTableSeeder extends Seeder
         DB::table('reservations')->insert([
             'reservation_number' => '000001',
             'title' => 'テストA1',
+            'user_id' => '4',
+            'meeting_room_id' => '1',
+            'start_time' => '2009-03-20 10:00:00',
+            'end_time' => '2009-03-20 14:00:00',
+            'is_approved' => true,
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime(),
+        ]);
+        DB::table('reservations')->insert([
+            'reservation_number' => '000002',
+            'title' => 'テストA2',
+            'user_id' => '5',
+            'meeting_room_id' => '1',
+            'start_time' => '2015-03-20 10:00:00',
+            'end_time' => '2015-03-20 14:00:00',
+            'is_approved' => true,
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime(),
+        ]);
+        DB::table('reservations')->insert([
+            'reservation_number' => '000003',
+            'title' => 'テストA3',
             'user_id' => '2',
             'meeting_room_id' => '1',
             'start_time' => '2021-03-20 10:00:00',
@@ -23,7 +45,7 @@ class ReservationsTableSeeder extends Seeder
             'updated_at' => new DateTime(),
         ]);
         DB::table('reservations')->insert([
-            'reservation_number' => '000002',
+            'reservation_number' => '000004',
             'title' => 'テストB1',
             'user_id' => '2',
             'meeting_room_id' => '2',
@@ -34,7 +56,7 @@ class ReservationsTableSeeder extends Seeder
             'updated_at' => new DateTime(),
         ]);
         DB::table('reservations')->insert([
-            'reservation_number' => '000003',
+            'reservation_number' => '000005',
             'title' => 'テストC1',
             'user_id' => '2',
             'meeting_room_id' => '3',
@@ -45,7 +67,7 @@ class ReservationsTableSeeder extends Seeder
             'updated_at' => new DateTime(),
         ]);
         DB::table('reservations')->insert([
-            'reservation_number' => '000004',
+            'reservation_number' => '000006',
             'title' => 'テストC2',
             'user_id' => '2',
             'meeting_room_id' => '3',
@@ -56,7 +78,7 @@ class ReservationsTableSeeder extends Seeder
             'updated_at' => new DateTime(),
         ]);
         DB::table('reservations')->insert([
-            'reservation_number' => '000005',
+            'reservation_number' => '000007',
             'title' => 'テストC3',
             'user_id' => '2',
             'meeting_room_id' => '3',
@@ -66,7 +88,7 @@ class ReservationsTableSeeder extends Seeder
             'updated_at' => new DateTime(),
         ]);
         DB::table('reservations')->insert([
-            'reservation_number' => '000006',
+            'reservation_number' => '000008',
             'title' => 'テストC4',
             'user_id' => '3',
             'meeting_room_id' => '1',
