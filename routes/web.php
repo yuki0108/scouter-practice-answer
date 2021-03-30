@@ -66,10 +66,6 @@ Route::group(['middleware' => ['auth']], function(){
     Route::put('/users/update', 'UserController@update')
         ->name('users.update');
 
-    Route::get('/items/create' , 'ItemController@create' )
-        ->name('items.create');
-    Route::post('/items/store' , 'ItemController@store' )
-        ->name('items.store');
 });
 
 // ユーザー一覧の取得

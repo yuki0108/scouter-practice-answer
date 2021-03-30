@@ -32,7 +32,6 @@ class ReservationController extends Controller
         return view('reservation_create',
             [
                 'meetingRooms' => MeetingRoom::get(),
-                'items' => Item::get(),
                 'isAdmin' => Auth::user()->is_administrator,
             ]);
     }
@@ -97,16 +96,6 @@ class ReservationController extends Controller
         }
         $reservation->save();
 
-        // 備品予約の処理
-        $items = $request->items;
-        if ($items != null) {
-            foreach ($items as $itemId) {
-                $itemReservation = new ItemReservation();
-                $itemReservation->item_id = $itemId;
-                $itemReservation->reservation_id = $reservation->id;
-                $itemReservation->save();
-            }
-        }
         return redirect(route('reservations.index'));
     }
 
@@ -191,17 +180,6 @@ class ReservationController extends Controller
                 'title' => $request->title,
                 'is_approved' => $isApproved]);
 
-        // 備品の予約を一旦消して登録し直す
-        ItemReservation::Where('reservation_id', $request->id)->delete();
-        $items = $request->items;
-        if ($items != null) {
-            foreach ($items as $itemId) {
-                $itemReservation = new ItemReservation();
-                $itemReservation->item_id = $itemId;
-                $itemReservation->reservation_id = $request->id;
-                $itemReservation->save();
-            }
-        }
         return redirect(route('reservations.index'));
     }
 
