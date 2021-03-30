@@ -426,13 +426,6 @@
       ],
       "value": ""
     }, {
-      "id": "9ee8855a-2b17-4014-bc63-653109942a68",
-      "comment": "",
-      "command": "select",
-      "target": "id=department_id",
-      "targets": [],
-      "value": "label=---"
-    }, {
       "id": "ff207895-deb7-4c63-b508-046fe89e7b4f",
       "comment": "",
       "command": "select",
