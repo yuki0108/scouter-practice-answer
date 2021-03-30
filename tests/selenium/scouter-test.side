@@ -2,7 +2,7 @@
   "id": "b8399ce2-620e-479b-854f-611d89271603",
   "version": "2.0",
   "name": "php-practice-22",
-  "url": "http://localhost:8000",
+  "url": "http://localhost",
   "tests": [{
     "id": "476b9006-401e-4198-b33f-a48d10243583",
     "name": "php-practice-22",
@@ -817,6 +817,6 @@
     "timeout": 300,
     "tests": ["476b9006-401e-4198-b33f-a48d10243583"]
   }],
-  "urls": ["http://localhost:8000/"],
+  "urls": ["http://localhost/"],
   "plugins": []
 }
