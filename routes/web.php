@@ -27,6 +27,10 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('/home' , 'HomeController@index' );
     Route::get('/reservations/index' , 'ReservationController@index' )
         ->name('reservations.index');
+    Route::get('/reservations/create' , 'ReservationController@create' )
+        ->name('reservations.create');
+    Route::post('/reservations/store' , 'ReservationController@store' )
+        ->name('reservations.store');
     Route::get('/reservations/edit/{id}', 'ReservationController@edit')
         ->name('reservations.edit');
     Route::put('/reservations/update', 'ReservationController@update')
@@ -51,16 +55,8 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('/rooms/delete/{id}', 'MeetingRoomController@delete')
         ->name('rooms.delete');
 
-    Route::get('/users/index' , 'UserController@index' )
-        ->name('users.index');
     Route::post('/users/index' , 'UserController@search' )
         ->name('users.search');
-    Route::get('/users/show/{id}' , 'UserController@show' )
-        ->name('users.show');
-    Route::get('/users/edit/{id}', 'UserController@edit')
-        ->name('users.edit');
-    Route::put('/users/update', 'UserController@update')
-        ->name('users.update');
 
     Route::get('/items/create' , 'ItemController@create' )
         ->name('items.create');
@@ -68,6 +64,4 @@ Route::group(['middleware' => ['auth']], function(){
         ->name('items.store');
 });
 
-// ユーザー一覧の取得
-Route::get('/user', 'UserController@index');
 
