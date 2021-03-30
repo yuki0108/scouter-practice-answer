@@ -419,18 +419,6 @@
       ],
       "value": ""
     }, {
-      "id": "23ea5509-3079-4286-a122-0931f24ad771",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(2) > td:nth-child(1)",
-      "targets": [
-        ["css=tr:nth-child(2) > td:nth-child(1)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td", "xpath:idRelative"],
-        ["xpath=//td", "xpath:position"],
-        ["xpath=//td[contains(.,'000002')]", "xpath:innerText"]
-      ],
-      "value": "000002"
-    }, {
       "id": "2bd7be25-1564-4929-8b76-b8699456e8a9",
       "comment": "",
       "command": "verifyText",
