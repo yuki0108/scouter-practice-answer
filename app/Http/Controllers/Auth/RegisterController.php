@@ -9,7 +9,6 @@ use App\Providers\RouteServiceProvider;
 use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Validator;
 
 class RegisterController extends Controller
 {
@@ -49,16 +48,8 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
-    protected function validator(array $data)
+    protected function validator()
     {
-        return Validator::make($data, [
-            'user_name_id' => ['required', 'string', 'max:20', 'unique:users'],
-            'name' => ['required', 'string', 'max:255',],
-            'zipcode' => ['required', 'string', 'regex:/^[0-9]{3}-[0-9]{4}$/'],
-            'address' => ['required', 'string', 'max:255'],
-            'department_id' => ['required'],
-            'password' => ['required', 'string', 'min:8', 'confirmed', 'regex:/\A(?=.*?[a-z])(?=.*?\d)(?=.*?[!-\/:-@[-`{-~])[!-~]{8,100}+\z/i'],
-        ]);
     }
 
     public function showRegistrationForm()
@@ -79,19 +70,7 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(array $data)
+    protected function create()
     {
-        return User::create([
-            'name' => $data['name'],
-            'zipcode' => $data['zipcode'],
-            'address' => $data['address'],
-            'email' => $data['email'],
-            'phone_number' => $data['phone_number'],
-            'password' => Hash::make($data['password']),
-            'is_administrator' =>  $data['is_administrator'],
-            'user_name_id' => $data['user_name_id'],
-            'department_id' => $data['department_id'],
-            'position_id' => $data['position_id']
-        ]);
     }
 }
