@@ -165,18 +165,6 @@
       ],
       "value": ""
     }, {
-      "id": "c8987bf6-3b6e-4029-a852-2b50c7eaf492",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=tr:nth-child(6) > td:nth-child(6)",
-      "targets": [
-        ["css=tr:nth-child(6) > td:nth-child(6)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[6]/td[6]", "xpath:idRelative"],
-        ["xpath=//tr[6]/td[6]", "xpath:position"],
-        ["xpath=//td[contains(.,'未承認\n')]", "xpath:innerText"]
-      ],
-      "value": "未承認"
-    }, {
       "id": "fea8ad79-11de-4b53-8141-e77215924a38",
       "comment": "",
       "command": "verifyText",
