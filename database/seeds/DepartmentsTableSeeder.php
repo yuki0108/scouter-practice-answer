@@ -12,6 +12,11 @@ class DepartmentsTableSeeder extends Seeder
     public function run()
     {
         DB::table('departments')->insert([
+            'name' => '未選択',
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime(),
+        ]);
+        DB::table('departments')->insert([
             'name' => '営業部',
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),

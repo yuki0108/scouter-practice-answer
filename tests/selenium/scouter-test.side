@@ -338,9 +338,9 @@
         ["css=tr:nth-child(2) > td:nth-child(2)", "css:finder"],
         ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td[2]", "xpath:idRelative"],
         ["xpath=//tr[2]/td[2]", "xpath:position"],
-        ["xpath=//td[contains(.,'花子テスト')]", "xpath:innerText"]
+        ["xpath=//td[contains(.,'テスト太郎1')]", "xpath:innerText"]
       ],
-      "value": "花子テスト"
+      "value": "テスト太郎1"
     }, {
       "id": "e3d36528-82e2-4e0b-bf35-b3b8dc193aca",
       "comment": "",
