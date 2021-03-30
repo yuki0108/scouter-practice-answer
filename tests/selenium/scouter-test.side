@@ -317,13 +317,6 @@
       ],
       "value": ""
     }, {
-      "id": "f7da1b10-0104-4ddd-9933-1503664fd235",
-      "comment": "",
-      "command": "verifyNotText",
-      "target": "css=tr:nth-child(2) > td:nth-child(1)",
-      "targets": [],
-      "value": "000001"
-    }, {
       "id": "ad84d842-8db7-46c9-92dc-cb8345dbbd73",
       "comment": "",
       "command": "",
