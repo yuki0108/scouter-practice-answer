@@ -317,21 +317,6 @@
       ],
       "value": ""
     }, {
-      "id": "45f0ed64-8051-46b9-8251-f5e259ddc71f",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=削除",
-      "targets": [
-        ["linkText=削除", "linkText"],
-        ["css=tr:nth-child(2) .btn-danger", "css:finder"],
-        ["xpath=//a[contains(text(),'削除')]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td[11]/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/reservations/delete/1']", "xpath:href"],
-        ["xpath=//td[11]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'削除')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
       "id": "f7da1b10-0104-4ddd-9933-1503664fd235",
       "comment": "",
       "command": "verifyNotText",
@@ -561,21 +546,6 @@
       ],
       "value": "編集"
     }, {
-      "id": "4ca7641a-cbbe-42b2-a8e8-9b15b1bcadd8",
-      "comment": "",
-      "command": "verifyText",
-      "target": "linkText=削除",
-      "targets": [
-        ["linkText=削除", "linkText"],
-        ["css=tr:nth-child(2) .btn-danger", "css:finder"],
-        ["xpath=//a[contains(text(),'削除')]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td[11]/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/reservations/delete/2']", "xpath:href"],
-        ["xpath=//td[11]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'削除')]", "xpath:innerText"]
-      ],
-      "value": "削除"
-    }, {
       "id": "af388372-c2ae-4ba0-861f-80b01b2d7e78",
       "comment": "",
       "command": "verifyText",
@@ -627,21 +597,6 @@
         ["xpath=//tr[6]/td[11]/a", "xpath:position"]
       ],
       "value": "削除"
-    }, {
-      "id": "a5a812c3-8481-47d6-a9ae-05f2791fa41b",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=編集",
-      "targets": [
-        ["linkText=編集", "linkText"],
-        ["css=tr:nth-child(2) .btn-primary", "css:finder"],
-        ["xpath=//a[contains(text(),'編集')]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td[10]/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/reservations/edit/2']", "xpath:href"],
-        ["xpath=//td[10]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'編集')]", "xpath:innerText"]
-      ],
-      "value": ""
     }, {
       "id": "27b0f338-0c45-4790-b3f7-180ec83bcdc2",
       "comment": "",
