@@ -258,19 +258,6 @@
       ],
       "value": ""
     }, {
-      "id": "79668c0b-dcf0-48e2-bc7b-988dd59597c2",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "css=td:nth-child(1) > a",
-      "targets": [
-        ["css=td:nth-child(1) > a", "css:finder"],
-        ["xpath=(//a[contains(text(),'user1')])[2]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/users/show/1']", "xpath:href"],
-        ["xpath=//td/a", "xpath:position"]
-      ],
-      "value": "user1"
-    }, {
       "id": "10a39663-6c01-45dc-be05-46eaefbf32a8",
       "comment": "",
       "command": "type",
@@ -297,21 +284,6 @@
         ["xpath=//button[contains(.,'ユーザー検索')]", "xpath:innerText"]
       ],
       "value": ""
-    }, {
-      "id": "f1993be2-c177-436a-b75e-c6b999ccb77f",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "linkText=user3",
-      "targets": [
-        ["linkText=user3", "linkText"],
-        ["css=td:nth-child(1) > a", "css:finder"],
-        ["xpath=//a[contains(text(),'user3')]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/users/show/3']", "xpath:href"],
-        ["xpath=//td/a", "xpath:position"],
-        ["xpath=//a[contains(.,'user3')]", "xpath:innerText"]
-      ],
-      "value": "user3"
     }, {
       "id": "bfc64f9a-138b-4636-9c85-099a5f9e4206",
       "comment": "",
@@ -970,43 +942,6 @@
         ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/div/form/div[6]/div/button", "xpath:idRelative"],
         ["xpath=//div[6]/div/button", "xpath:position"],
         ["xpath=//button[contains(.,'ユーザー検索')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "c335f7a1-331d-4186-97f4-5ae4f6ccdc4d",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "css=td:nth-child(1) > a",
-      "targets": [
-        ["css=td:nth-child(1) > a", "css:finder"],
-        ["xpath=(//a[contains(text(),'user1')])[2]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/users/show/1']", "xpath:href"],
-        ["xpath=//td/a", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "0d796a89-86db-454a-a97f-9ba50a107d5f",
-      "comment": "",
-      "command": "click",
-      "target": "css=td:nth-child(1) > a",
-      "targets": [
-        ["css=td:nth-child(1) > a", "css:finder"],
-        ["xpath=(//a[contains(text(),'user1')])[2]", "xpath:link"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/table/tbody/tr[2]/td/a", "xpath:idRelative"],
-        ["xpath=//a[@href='http://localhost/users/show/1']", "xpath:href"],
-        ["xpath=//td/a", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "7a733b3d-4c8b-48f2-b5a9-9435727b83ca",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.d-flex > div:nth-child(1)",
-      "targets": [
-        ["css=.d-flex > div:nth-child(1)", "css:finder"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div/div/div", "xpath:idRelative"],
-        ["xpath=//div/div/div/div/div/div/div", "xpath:position"]
       ],
       "value": ""
     }]
